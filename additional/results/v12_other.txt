@@ -1,0 +1,19 @@
+theta neuron I=0.0001 spike 1: T_e=314.159 (k*pi/sqrt(I)=314.159) Theta_e=1.571 Pi=31.83 at theta=-0.01998 rtolPi=0.00318 Pi_rel=31.83
+theta neuron I=0.0001 spike 2: T_e=628.319 (k*pi/sqrt(I)=628.319) Theta_e=4.712 Pi=6660 at theta=6.284 rtolPi=0.666 Pi_rel=6660
+theta neuron I=0.0001 spike 10: T_e=3141.59 (k*pi/sqrt(I)=3141.59) Theta_e=29.85 Pi=9459 at theta=56.55 rtolPi=0.946 Pi_rel=9459
+theta neuron I=1e-06 spike 1: T_e=3141.59 (k*pi/sqrt(I)=3141.59) Theta_e=1.571 Pi=3183 at theta=-1.054e-08 rtolPi=0.318 Pi_rel=318.3
+theta neuron I=1e-06 spike 2: T_e=6283.19 (k*pi/sqrt(I)=6283.19) Theta_e=4.712 Pi=6.022e+05 at theta=6.284 rtolPi=60.2 Pi_rel=6.022e+05
+theta neuron I=1e-06 spike 10: T_e=31415.9 (k*pi/sqrt(I)=31415.9) Theta_e=29.85 Pi=8.207e+05 at theta=56.55 rtolPi=82.1 Pi_rel=8.207e+05
+May-Leonard switches (reference in log variables): 14.9(x3), 34.2(x2), 56.5(x1), 83.5(x3), 117.7(x2), 162.5(x1), 223.6(x3), 308.8(x2), 430.4(x1), 606.5(x3), 864.4(x2), 1245.0(x1)
+May-Leonard switch 1: T_e=14.922 Theta_e=10.7 Pi=1.048 rtolPi=0.000105 Pi_*=0.9275 Pi_rel=1.048 Pi_log=2.094 min x on the way=0.0559 at max: t=0, shares=[0.243 0.455 0.301] check=1.7e-10
+May-Leonard switch 2: T_e=34.2032 Theta_e=9.425 Pi=1.869 rtolPi=0.000187 Pi_*=1.053 Pi_rel=1.869 Pi_log=4.234 min x on the way=0.0286 at max: t=8.3971, shares=[0.472 0.098 0.431] check=3.1e-10
+May-Leonard switch 3: T_e=56.5305 Theta_e=8.754 Pi=4.279 rtolPi=0.000428 Pi_*=1.134 Pi_rel=4.279 Pi_log=8.369 min x on the way=0.0108 at max: t=6.3157, shares=[0.487 0.152 0.361] check=2.6e-10
+May-Leonard switch 4: T_e=83.529 Theta_e=8.477 Pi=8.164 rtolPi=0.000816 Pi_*=1.171 Pi_rel=8.164 Pi_log=14.67 min x on the way=0.00254 at max: t=5.5578, shares=[0.493 0.174 0.333] check=5.1e-10
+May-Leonard switch 5: T_e=117.651 Theta_e=8.405 Pi=14.02 rtolPi=0.0014 Pi_*=1.181 Pi_rel=14.02 Pi_log=24.03 min x on the way=0.000294 at max: t=5.1949, shares=[0.496 0.185 0.32 ] check=1.1e-09
+May-Leonard switch 6: T_e=162.528 Theta_e=8.396 Pi=22.78 rtolPi=0.00228 Pi_*=1.182 Pi_rel=22.78 Pi_log=37.95 min x on the way=1.16e-05 at max: t=4.997, shares=[0.497 0.191 0.312] check=1.7e-09
+May-Leonard switch 7: T_e=223.555 Theta_e=8.395 Pi=516.9 rtolPi=0.0517 Pi_*=7.934 Pi_rel=35.9 Pi_log=59.77 min x on the way=9.13e-08 at max: t=163.14, shares=[0.    0.001 0.998] check=2.8e-09
+May-Leonard switch 8: T_e=308.812 Theta_e=8.395 Pi=6.564e+04 rtolPi=6.56 Pi_*=145.1 Pi_rel=55.6 Pi_log=92.55 min x on the way=6.36e-11 at max: t=224.18, shares=[0. 1. 0.] check=4.9e-09
+May-Leonard switch 9: T_e=430.412 Theta_e=8.395 Pi=9.417e+07 rtolPi=9.42e+03 Pi_*=1.137e+04 Pi_rel=85.15 Pi_log=141.7 min x on the way=1.17e-15 at max: t=309.44, shares=[1. 0. 0.] check=8.0e-09
+May-Leonard switch 10: T_e=606.527 Theta_e=8.395 Pi=5.117e+12 rtolPi=5.12e+08 Pi_*=7.887e+06 Pi_rel=129.5 Pi_log=215.5 min x on the way=9.24e-23 at max: t=431.04, shares=[0. 0. 1.] check=1.3e-08
+May-Leonard switch 11: T_e=864.415 Theta_e=8.395 Pi=6.482e+19 rtolPi=6.48e+15 Pi_*=1.441e+11 Pi_rel=196 Pi_log=326.2 min x on the way=2.05e-33 at max: t=607.15, shares=[0. 1. 0.] check=1.9e-08
+May-Leonard switch 12: T_e=1244.96 Theta_e=8.395 Pi=2.923e+30 rtolPi=2.92e+26 Pi_*=2.657e+13 Pi_rel=295.7 Pi_log=492.2 min x on the way=2.14e-49 at max: t=865.04, shares=[1. 0. 0.] check=3.0e-08

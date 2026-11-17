@@ -1,0 +1,15 @@
+\begin{tabular}{lcccc}
+\toprule
+& \multicolumn{2}{c}{scalar problems} & \multicolumn{2}{c}{SIR}\\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+method & median & 10\%--90\% & median & 10\%--90\% \\
+\midrule
+BDF & $4.5$ & $1.2$--$7.6$ & $2.2$ & $0.71$--$2.5$ \\
+LSODA & $3$ & $0.62$--$5.3$ & $0.86$ & $0.073$--$1.8$ \\
+RK45 & $0.073$ & $8.7\cdot10^{-4}$--$1.7$ & $0.045$ & $3.1\cdot10^{-3}$--$0.13$ \\
+DOP853 & $0.015$ & $4.9\cdot10^{-4}$--$0.05$ & $0.037$ & $2.5\cdot10^{-3}$--$0.094$ \\
+Radau & $1.5\cdot10^{-3}$ & $6.8\cdot10^{-5}$--$0.011$ & $9.8\cdot10^{-3}$ & $7.7\cdot10^{-4}$--$0.014$ \\
+\midrule
+runs & \multicolumn{2}{c}{134} & \multicolumn{2}{c}{29}\\
+\bottomrule
+\end{tabular}

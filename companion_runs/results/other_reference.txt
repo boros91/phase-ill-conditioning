@@ -1,0 +1,89 @@
+SIR I0 = 1e-09: peak time by quadrature 107.4658330608, by the reference ODE 107.4658330608
+  std  ode45   steps     33  peak yes D_peak    4.4945  max I 0.3 at t = 112.5  min I 1.00e-09  max err I 8.27e-02
+  std  ode23   steps    105  peak yes D_peak   14.2794  max I 0.3 at t = 121.8  min I -4.74e-07  max err I 2.29e-01
+  std  ode23s  steps    127  peak yes D_peak   61.2628  max I 0.301 at t = 168.6  min I 1.00e-09  max err I 2.99e-01
+  std  ode23t  steps     10  peak NO  D_peak       nan  max I 1.02e-07 at t = 300.0  min I -5.12e-08  max err I 1.87e-01
+  std  ode15s  steps     10  peak NO  D_peak       nan  max I 1e-09 at t = 0.0  min I -4.77e-10  max err I 1.87e-01
+  def  ode45   steps     25  peak yes D_peak    4.4648  max I 0.29 at t = 115.0  min I 1.00e-09  max err I 8.58e-02
+  def  ode23   steps     64  peak yes D_peak   14.2957  max I 0.3 at t = 122.5  min I 1.00e-09  max err I 2.28e-01
+  def  ode23s  steps     78  peak yes D_peak   61.2172  max I 0.301 at t = 169.1  min I 1.00e-09  max err I 2.99e-01
+  def  ode23t  steps     10  peak NO  D_peak       nan  max I 1.02e-07 at t = 300.0  min I -5.12e-08  max err I 1.87e-01
+  def  ode15s  steps     10  peak NO  D_peak       nan  max I 1e-09 at t = 0.0  min I -4.77e-10  max err I 1.87e-01
+  atol ode45   steps     62  peak yes D_peak   -0.0013  max I 0.3 at t = 107.0  min I 1.00e-09  max err I 2.26e-05
+  atol ode23   steps    256  peak yes D_peak    0.0117  max I 0.3 at t = 107.9  min I 1.00e-09  max err I 2.23e-04
+  atol ode23s  steps    317  peak yes D_peak   -0.0558  max I 0.3 at t = 107.1  min I 1.00e-09  max err I 1.07e-03
+  atol ode23t  steps    419  peak yes D_peak   -0.0644  max I 0.3 at t = 107.5  min I 1.00e-09  max err I 1.36e-03
+  atol ode15s  steps    173  peak yes D_peak   -0.0312  max I 0.3 at t = 106.9  min I 1.00e-09  max err I 6.19e-04
+  log  ode45   steps     21  peak yes D_peak    0.0002  max I 0.3 at t = 106.9  min I 1.00e-09  max err I 4.53e-06
+  log  ode23   steps     78  peak yes D_peak    0.0006  max I 0.3 at t = 107.2  min I 1.00e-09  max err I 8.12e-05
+  log  ode23s  steps    103  peak yes D_peak    0.0056  max I 0.3 at t = 107.1  min I 1.00e-09  max err I 7.18e-05
+  log  ode23t  steps    131  peak yes D_peak    0.0080  max I 0.3 at t = 107.2  min I 1.00e-09  max err I 1.62e-04
+  log  ode15s  steps     86  peak yes D_peak   -0.0012  max I 0.3 at t = 107.6  min I 1.00e-09  max err I 5.46e-05
+SIR I0 = 1e-07: peak time by quadrature 84.4399754634, by the reference ODE 84.4399754634
+  std  ode45   steps     33  peak yes D_peak    2.2582  max I 0.293 at t = 89.1  min I 3.24e-08  max err I 4.25e-02
+  std  ode23   steps    105  peak yes D_peak    3.3621  max I 0.3 at t = 87.6  min I -2.60e-07  max err I 6.61e-02
+  std  ode23s  steps    132  peak yes D_peak   -0.7090  max I 0.3 at t = 83.3  min I -2.33e-09  max err I 1.41e-02
+  std  ode23t  steps    126  peak yes D_peak  185.0457  max I 0.3 at t = 269.1  min I -3.01e-06  max err I 3.00e-01
+  std  ode15s  steps     12  peak NO  D_peak       nan  max I 1e-07 at t = 0.0  min I -7.72e-08  max err I 3.00e-01
+  def  ode45   steps     26  peak yes D_peak    2.2374  max I 0.3 at t = 86.0  min I 3.50e-08  max err I 4.22e-02
+  def  ode23   steps     64  peak yes D_peak    3.3776  max I 0.3 at t = 88.1  min I -5.86e-07  max err I 6.61e-02
+  def  ode23s  steps     83  peak yes D_peak   -0.7569  max I 0.301 at t = 83.4  min I 1.08e-09  max err I 1.49e-02
+  def  ode23t  steps     73  peak yes D_peak  185.0122  max I 0.3 at t = 270.2  min I -3.01e-06  max err I 3.00e-01
+  def  ode15s  steps     12  peak NO  D_peak       nan  max I 1e-07 at t = 0.0  min I -7.72e-08  max err I 3.00e-01
+  atol ode45   steps     62  peak yes D_peak   -0.0009  max I 0.294 at t = 86.7  min I 1.32e-08  max err I 1.67e-05
+  atol ode23   steps    247  peak yes D_peak    0.0062  max I 0.3 at t = 84.5  min I 1.32e-08  max err I 1.13e-04
+  atol ode23s  steps    304  peak yes D_peak   -0.0358  max I 0.3 at t = 83.9  min I 1.31e-08  max err I 6.80e-04
+  atol ode23t  steps    446  peak yes D_peak   -0.0217  max I 0.3 at t = 84.3  min I 1.31e-08  max err I 5.12e-04
+  atol ode15s  steps    166  peak yes D_peak   -0.0066  max I 0.3 at t = 84.5  min I 1.33e-08  max err I 1.28e-04
+  log  ode45   steps     21  peak yes D_peak    0.0002  max I 0.296 at t = 82.6  min I 1.32e-08  max err I 5.75e-06
+  log  ode23   steps     78  peak yes D_peak    0.0005  max I 0.3 at t = 84.1  min I 1.33e-08  max err I 6.40e-05
+  log  ode23s  steps    103  peak yes D_peak    0.0056  max I 0.3 at t = 84.0  min I 1.34e-08  max err I 7.19e-05
+  log  ode23t  steps    135  peak yes D_peak    0.0074  max I 0.3 at t = 84.2  min I 1.32e-08  max err I 1.65e-04
+  log  ode15s  steps     91  peak yes D_peak    0.0012  max I 0.3 at t = 84.1  min I 1.32e-08  max err I 2.86e-05
+May-Leonard reference switch times: 14.9220 34.2032 56.5305 83.5290 117.6513 162.5278 223.5554 308.8118 430.4118 606.5271 864.4153 1244.9630
+  rtol 1e-11 minus rtol 1e-13, largest difference: 8.753886504564434e-12
+  ML std  ode45   steps    515 min x 3.12e-48  D per switch -0.000678 -0.000564 -0.000567 -0.00119 -0.00275 -0.0082 -0.0273 -0.1 -0.772 -2.59 -7.03 -14.7
+  ML std  ode23   steps   1483 min x -5.00e+00  D per switch -0.000245 5.46e-05 0.0017 0.00661 0.019 0.0499 0.122 0.413 5.19 -6.69 -35.9 nan
+  ML std  ode23s  steps    712 min x -1.08e-08  D per switch -0.000339 -0.00735 -0.0179 -0.0313 -0.0475 -0.0651 -0.0872 -0.201 -1.3 nan nan -218
+  ML std  ode23t  steps    894 min x -5.00e+00  D per switch -0.000609 0.000869 0.00615 0.0119 0.0241 0.0559 0.211 0.134 nan nan -94.1 nan
+  ML std  ode15s  steps    455 min x -5.00e+00  D per switch 0.00335 0.00337 0.00146 -0.000873 -0.00892 -0.0309 0.0483 -0.3 nan nan -137 nan
+  ML def  ode45   steps    464 min x 3.03e-48  D per switch -0.00389 -0.00671 -0.00734 -0.00997 -0.0355 -0.0773 -0.174 -0.606 -1.8 -4.17 -8.49 -16.1
+  ML def  ode23   steps   2009 min x -5.00e+00  D per switch -0.000612 0.00307 0.0223 0.08 0.219 0.514 1.16 2.7 9.11 nan nan -279
+  ML def  ode23s  steps    381 min x -1.05e-08  D per switch -0.00414 -0.041 -0.0973 -0.159 -0.229 -0.291 -0.321 -0.337 -1.65 nan nan -147
+  ML def  ode23t  steps    499 min x -5.00e+00  D per switch 0.000584 0.00746 0.0162 0.0299 0.0608 0.124 0.427 0.968 nan nan -213 nan
+  ML def  ode15s  steps    448 min x -5.00e+00  D per switch 0.018 0.0149 -0.0118 -0.0965 -0.219 -0.39 -0.567 -4.87 -26.7 -80.1 nan nan
+  ML log  ode45   steps    879 min x 2.14e-49  D per switch 0.000141 0.000111 5.68e-05 3.13e-05 -4.42e-05 -0.000154 -0.00031 -0.000549 -0.000918 -0.00147 -0.00232 -0.00359
+  ML log  ode23   steps   1330 min x 2.17e-49  D per switch -0.00203 -0.00208 -0.00308 -0.00489 -0.00831 -0.0134 -0.0216 -0.0342 -0.0531 -0.0817 -0.125 -0.19
+  ML log  ode23s  steps   2228 min x 2.19e-49  D per switch -0.000915 -0.00152 -0.00324 -0.00641 -0.0115 -0.0194 -0.0314 -0.0495 -0.0767 -0.118 -0.179 -0.272
+  ML log  ode23t  steps   1406 min x 2.15e-49  D per switch 0.00576 0.0146 0.0184 0.0201 0.0203 0.0185 0.0147 0.00929 0.00145 -0.0101 -0.0286 -0.0569
+  ML log  ode15s  steps    718 min x 2.19e-49  D per switch -0.000628 -0.00317 -0.00728 -0.0128 -0.0182 -0.0277 -0.0431 -0.0634 -0.0899 -0.125 -0.179 -0.262
+  theta I=0.0001 std  ode45   steps     223 spikes 10  D at spikes 0.0163 2.3 5.65 9.53 14.6 20.6 27.5 35.3 43.7 52.2
+  theta I=0.0001 std  ode23   steps     478 spikes 10  D at spikes 0.000949 -0.103 -0.771 -1.98 -3.7 -5.09 -6.71 -9.87 -13.9 -18.6
+  theta I=0.0001 std  ode23s  steps     508 spikes 10  D at spikes -0.0162 2 4.53 7.96 11.5 16.9 20.3 24.4 36 40.5
+  theta I=0.0001 std  ode23t  steps     870 spikes 10  D at spikes -0.196 -4.97 -6.21 -1.55 15.1 29.3 55.9 64.1 74.8 119
+  theta I=0.0001 std  ode15s  steps     765 spikes 10  D at spikes -0.0915 -2.04 6.56 -9.74 -26.5 -47.9 -72.4 -35.1 -60.5 -45.1
+  theta I=0.0001 def  ode45   steps     152 spikes  9  D at spikes 0.348 10.4 28.2 50.5 81.1 121 176 246 350 nan
+  theta I=0.0001 def  ode23   steps     250 spikes 10  D at spikes 0.0234 -5.19 -15.3 -80.1 -104 -178 -197 -240 -345 -403
+  theta I=0.0001 def  ode23s  steps     283 spikes  9  D at spikes -0.0746 10.3 16.7 19.3 61.4 93 94.1 124 151 nan
+  theta I=0.0001 def  ode23t  steps     358 spikes  6  D at spikes -0.827 -2.32 67.1 420 551 1.1e+03 nan nan nan nan
+  theta I=0.0001 def  ode15s  steps     610 spikes 10  D at spikes -0.447 -10.6 -25.9 -58.2 -114 -174 -106 -146 -288 -333
+  theta I=0.0001 time ode45   steps     877 spikes 10  D at spikes 0.00166 0.00311 0.00558 0.00641 0.00885 0.00969 0.0122 0.013 0.0154 0.0163
+  theta I=0.0001 time ode23   steps    7366 spikes 10  D at spikes 6.1e-05 0.000122 0.000183 0.000244 0.000305 0.000366 0.000427 0.000488 0.000549 0.00061
+  theta I=0.0001 time ode23s  steps    7434 spikes 10  D at spikes 0.00906 0.0181 0.0274 0.0367 0.0458 0.0548 0.0639 0.073 0.0821 0.0911
+  theta I=0.0001 time ode23t  steps   13150 spikes 10  D at spikes -0.0341 -0.0681 -0.102 -0.135 -0.169 -0.203 -0.237 -0.271 -0.305 -0.339
+  theta I=0.0001 time ode15s  steps    3069 spikes 10  D at spikes -0.00274 -0.00548 -0.00822 -0.011 -0.0132 -0.0168 -0.019 -0.0226 -0.0248 -0.0284
+  theta I=1e-06 std  ode45   steps     284 spikes  9  D at spikes 0.985 93 251 545 837 1.23e+03 1.75e+03 2.41e+03 3.38e+03 nan
+  theta I=1e-06 std  ode23   steps     644 spikes 10  D at spikes 0.119 -51 -169 -633 -1.42e+03 -2.61e+03 -2.8e+03 -3.09e+03 -3.43e+03 -4.2e+03
+  theta I=1e-06 std  ode23s  steps     599 spikes  9  D at spikes 1.65 39.6 92.6 375 616 660 1.01e+03 1.11e+03 1.24e+03 nan
+  theta I=1e-06 std  ode23t  steps     950 spikes  8  D at spikes -3.67 -17.6 649 2.83e+03 4.22e+03 5.23e+03 6.48e+03 6.91e+03 nan nan
+  theta I=1e-06 std  ode15s  steps    1253 spikes 10  D at spikes -3.13 -183 -316 -703 -1.55e+03 -2.47e+03 -3.39e+03 -4.27e+03 -4.97e+03 -5.64e+03
+  theta I=1e-06 def  ode45   steps     189 spikes  2  D at spikes 6.15 1.32e+04 nan nan nan nan nan nan nan nan
+  theta I=1e-06 def  ode23   steps     541 spikes 10  D at spikes 0.288 -440 -2.22e+03 -3.21e+03 -6e+03 -6.48e+03 -9.61e+03 -1.79e+04 -1.79e+04 -1.79e+04
+  theta I=1e-06 def  ode23s  steps     222 spikes  4  D at spikes 0.247 139 242 2.01e+04 nan nan nan nan nan nan
+  theta I=1e-06 def  ode23t  steps     815 spikes 10  D at spikes -8.29 -1.88e+03 -2.8e+03 -3.5e+03 -3.97e+03 -5.46e+03 -6.92e+03 -6.7e+03 -9.11e+03 -1.12e+04
+  theta I=1e-06 def  ode15s  steps     834 spikes 10  D at spikes -5.46 -379 -976 -1.84e+03 -3.59e+03 -5.11e+03 -8.04e+03 -9.55e+03 -4.41e+03 -7.24e+03
+  theta I=1e-06 time ode45   steps    2605 spikes 10  D at spikes 0.000703 0.00183 0.00301 0.00426 0.00553 0.00679 0.00806 0.00932 0.0106 0.0119
+  theta I=1e-06 time ode23   steps   37992 spikes 10  D at spikes 2.82e-05 5.64e-05 8.47e-05 0.000113 0.000141 0.000169 0.000198 0.000226 0.000254 0.000282
+  theta I=1e-06 time ode23s  steps   38054 spikes 10  D at spikes 0.0193 0.0385 0.0577 0.077 0.0961 0.115 0.135 0.154 0.173 0.192
+  theta I=1e-06 time ode23t  steps   68122 spikes 10  D at spikes -0.0722 -0.148 -0.223 -0.297 -0.373 -0.449 -0.525 -0.6 -0.676 -0.752
+  theta I=1e-06 time ode15s  steps    7842 spikes 10  D at spikes -0.00536 -0.00984 -0.0143 -0.0188 -0.0233 -0.0278 -0.0323 -0.0368 -0.0413 -0.0458

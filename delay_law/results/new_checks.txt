@@ -1,0 +1,24 @@
+A BDF  : |D|/t* from 1.96e-07 to 2.17e-05 (t* from 4.6 to 1e+06); log10(measured/pred) mean -0.11, range -1.24..+0.28; signs ------------
+A RK45 : |D|/t* from 1.92e-07 to 6.18e-07 (t* from 4.6 to 1e+06); log10(measured/pred) mean +0.15, range -0.16..+0.52; signs +++++++++---
+A Radau: |D|/t* from 1.43e-09 to 1.06e-08 (t* from 4.6 to 1e+06); log10(measured/pred) mean +0.38, range +0.13..+0.54; signs ++++++------
+
+B a=     0 RK45 : D/t*=+6.16e-07  eta=1.92e-04  Pi=50  Lambda pred eta=5.75e-05  steps=73
+B a=     0 BDF  : D/t*=-2.20e-06  eta=6.87e-04  Pi=50  Lambda pred eta=1.29e-03  steps=313
+B a=    10 RK45 : D/t*=+1.50e-03  eta=4.25e-02  Pi=9.09e+03  Lambda pred eta=6.95e-04  steps=36
+B a=    10 BDF  : D/t*=-1.61e-03  eta=4.57e-02  Pi=9.09e+03  Lambda pred eta=4.02e-02  steps=156
+B a=  1000 RK45 : D/t*=+2.02e-02  eta=6.31e-03  Pi=9.99e+03  Lambda pred eta=2.41e-04  steps=23
+B a=  1000 BDF  : D/t*=-4.16e-02  eta=1.30e-02  Pi=9.99e+03  Lambda pred eta=2.78e-02  steps=74
+
+C delta=1e-01 EE   N=2000 on [0,2/delta]: h=0.01 D=+1.316e-02 D*delta^2=1.316e-04 steps to event=1022
+C delta=1e-01 Heun N=2000 on [0,2/delta]: h=0.01 D=+1.111e-05 D*delta^2=1.111e-07 steps to event=1020
+C delta=1e-01 RK4  N=2000 on [0,2/delta]: h=0.01 D=+4.613e-12 D*delta^2=4.613e-14 steps to event=1020
+C delta=1e-02 EE   N=2000 on [0,2/delta]: h=0.1 D=+3.566e-01 D*delta^2=3.566e-05 steps to event=1030
+C delta=1e-02 Heun N=2000 on [0,2/delta]: h=0.1 D=+1.499e-03 D*delta^2=1.499e-07 steps to event=1026
+C delta=1e-02 RK4  N=2000 on [0,2/delta]: h=0.1 D=+4.859e-08 D*delta^2=4.859e-12 steps to event=1026
+C delta=1e-03 EE   N=2000 on [0,2/delta]: h=1 D=+5.804e+00 D*delta^2=5.804e-06 steps to event=1011
+C delta=1e-03 Heun N=2000 on [0,2/delta]: h=1 D=+1.499e-01 D*delta^2=1.499e-07 steps to event=1006
+C delta=1e-03 RK4  N=2000 on [0,2/delta]: h=1 D=+4.404e-04 D*delta^2=4.404e-10 steps to event=1005
+
+D eps=1e-01: dtau/dx0 adj -111.111 fd -111.111 (eps*: -11.11); dtau/dz0 adj -47.007 fd -47.007 (eps*: -4.701); asymptotic -100, -50; Pi=3.111 Pi_*=2.996
+D eps=1e-02: dtau/dx0 adj -10101 fd -10101 (eps*: -101); dtau/dz0 adj -4952 fd -4952 (eps*: -49.52); asymptotic -1e+04, -5000; Pi=61.65 Pi_*=49.51
+D eps=1e-03: dtau/dx0 adj -1.001e+06 fd -1.001e+06 (eps*: -1001); dtau/dz0 adj -499502 fd -499502 (eps*: -499.5); asymptotic -1e+06, -5e+05; Pi=3923 Pi_*=2699

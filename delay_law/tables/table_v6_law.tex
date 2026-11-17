@@ -1,0 +1,24 @@
+\begin{tabular}{lllrcccccc}
+\toprule
+& & & & \multicolumn{2}{c}{exponent $\alpha$} & \multicolumn{3}{c}{spread of $\log_{10}$ residuals}\\
+\cmidrule(lr){5-6}\cmidrule(lr){7-9}
+& solver & method & runs & nominal & fitted & $c\,\tol\,\Pi$ & $K\tol^\alpha\Pi$ & $K\tol^\alpha\Lambda_\alpha$\\
+\midrule
+SciPy & \code{BDF} & BDF 1--5 & 47 & $1/2$--$5/6$ & 0.90 & 0.41 & 0.36 & 0.27\\
+ & \code{LSODA} & Adams 1--12/BDF 1--5 & 48 & $1/2$--$12/13$ & 0.85 & 0.54 & 0.46 & 0.37\\
+ & \code{RK45} & 5(4) extrap. & 48 & 1 & 0.75 & 1.09 & 1.05 & 0.77\\
+ & \code{DOP853} & 8(5,3) extrap. & 48 & 1 & 0.85 & 0.80 & 0.78 & 0.73\\
+ & \code{Radau} & 5, estimate 3 & 45 & 5/4 & 1.05 & 0.75 & 0.70 & 0.70\\
+MATLAB & \code{ode15s BDF} & BDF 1--5 & 56 & $1/2$--$5/6$ & 0.85 & 0.68 & 0.39 & 0.36\\
+ & \code{ode15s} & NDF 1--5 & 116 & $1/2$--$5/6$ & 0.85 & 0.71 & 0.44 & 0.30\\
+ & \code{ode23t} & trapezoid & 109 & 2/3 & 0.65 & 1.24 & 0.58 & 0.19\\
+ & \code{ode23tb} & TR-BDF2 & 57 & 2/3 & 0.65 & 1.35 & 0.65 & 0.29\\
+ & \code{ode23s} & Rosenbrock 2(3) & 117 & 2/3 & 0.60 & 1.54 & 0.80 & 0.46\\
+ & \code{ode113} & Adams 1--13 extrap. & 48 & 1 & 0.95 & 0.49 & 0.45 & 0.29\\
+ & \code{ode23} & 3(2) extrap. & 104 & 1 & 0.95 & 0.60 & 0.57 & 0.64\\
+ & \code{ode45} & 5(4) extrap. & 100 & 1 & 0.90 & 1.28 & 1.27 & 1.14\\
+\midrule
+SciPy, weighted mean & & & 236 & & & 0.72 & 0.67 & 0.57\\
+MATLAB, weighted mean & & & 707 & & & 1.03 & 0.67 & 0.48\\
+\bottomrule
+\end{tabular}

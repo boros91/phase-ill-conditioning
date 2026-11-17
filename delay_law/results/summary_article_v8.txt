@@ -1,0 +1,17 @@
+Numbers added in article v8
+
+ML time control RK45  Delta=1e-01 tol=1e-04: period 582.1 ms, rtol_t*11P/atol_t = 6.26e-06
+ML time control RK45  Delta=1e-01 tol=1e-06: period 582.1 ms, rtol_t*11P/atol_t = 6.26e-04
+ML time control LSODA Delta=1e-01 tol=1e-04: period 582.1 ms, rtol_t*11P/atol_t = 6.26e-06
+ML time control LSODA Delta=1e-01 tol=1e-06: period 582.1 ms, rtol_t*11P/atol_t = 6.26e-04
+ML time control RK45  Delta=1e-02 tol=1e-04: period 1789.1 ms, rtol_t*11P/atol_t = 1.92e-05
+ML time control RK45  Delta=1e-02 tol=1e-06: period 1789.1 ms, rtol_t*11P/atol_t = 1.92e-03
+ML time control LSODA Delta=1e-02 tol=1e-04: period 1789.1 ms, rtol_t*11P/atol_t = 1.92e-05
+ML time control LSODA Delta=1e-02 tol=1e-06: period 1789.1 ms, rtol_t*11P/atol_t = 1.92e-03
+ML time control RK45  Delta=1e-03 tol=1e-04: period 5604.2 ms, rtol_t*11P/atol_t = 6.02e-05
+ML time control RK45  Delta=1e-03 tol=1e-06: period 5604.2 ms, rtol_t*11P/atol_t = 6.02e-03
+ML time control LSODA Delta=1e-03 tol=1e-04: period 5604.2 ms, rtol_t*11P/atol_t = 6.02e-05
+ML time control LSODA Delta=1e-03 tol=1e-06: period 5604.2 ms, rtol_t*11P/atol_t = 6.02e-03
+ML time control: largest relative/absolute weight ratio for t: 6.02e-03
+
+H2 NaN check: 59 runs, 6 with NaN returns, all of them ['RK45']; NaN returns per such run 3-11 of 3152-3746 calls; implicit codes (LSODA, BDF, Radau): 0 NaN returns in 51 runs; saved step counts reproduced: 47 of 47

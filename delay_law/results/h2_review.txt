@@ -1,0 +1,15 @@
+reference t_e = 3.111378e-04 s; Cantera 3.2.0
+
+defaults, t_end=1 s      LSODA      rtol=1e-03 atol=        1e-06: ignited=False D/t_e=+nan steps=    36 t_final=1.00e+00 T_final=999.5 minY=-5.51e-05 finished
+defaults, t_end=1 s      BDF        rtol=1e-03 atol=        1e-06: ignited=False D/t_e=+nan steps=    10 t_final=1.00e+00 T_final=999.5 minY=-5.51e-05 finished
+defaults, t_end=1 s      Radau      rtol=1e-03 atol=        1e-06: ignited=False D/t_e=+nan steps=     5 t_final=1.00e+00 T_final=999.5 minY=-5.53e-05 finished
+defaults, t_end=1 s      RK45       rtol=1e-03 atol=        1e-06: ignited=True  D/t_e=-7.90e-02 steps=   459 t_final=2.87e-04 T_final=1401.1 minY=0.00e+00 running
+rtol 1e-4, scalar atol   LSODA      rtol=1e-04 atol=        1e-06: ignited=False D/t_e=+nan steps=    29 t_final=1.00e-03 T_final=1000.0 minY=-7.76e-08 finished
+rtol 1e-4, species atol  LSODA      rtol=1e-04 atol=componentwise: ignited=True  D/t_e=-1.05e-04 steps=   196 t_final=3.11e-04 T_final=1402.5 minY=0.00e+00 running
+rtol 1e-4, scalar atol   BDF        rtol=1e-04 atol=        1e-06: ignited=False D/t_e=+nan steps=     4 t_final=1.00e-03 T_final=1000.0 minY=-7.82e-08 finished
+rtol 1e-4, species atol  BDF        rtol=1e-04 atol=componentwise: ignited=True  D/t_e=-2.14e-04 steps=    99 t_final=3.11e-04 T_final=1408.6 minY=0.00e+00 running
+rtol 1e-4, scalar atol   Radau      rtol=1e-04 atol=        1e-06: ignited=False D/t_e=+nan steps=     1 t_final=1.00e-03 T_final=1000.0 minY=-8.04e-08 finished
+rtol 1e-4, species atol  Radau      rtol=1e-04 atol=componentwise: ignited=True  D/t_e=-6.38e-07 steps=    66 t_final=3.12e-04 T_final=1435.4 minY=0.00e+00 running
+Cantera defaults         ReactorNet rtol=1e-09 atol=        1e-15: ignited=True  D/t_e=-1.11e-06 steps=   508 t_final=3.11e-04 T_final=1400.1 minY=0.00e+00 ok
+Cantera rtol 1e-4        ReactorNet rtol=1e-04 atol=        1e-06: ignited=False D/t_e=+nan steps=     2 t_final=2.61e-03 T_final=1000.0 minY=-1.71e-07 ok
+Cantera rtol 1e-3        ReactorNet rtol=1e-03 atol=        1e-06: ignited=False D/t_e=+nan steps=     2 t_final=2.62e-03 T_final=1000.0 minY=-1.71e-07 ok

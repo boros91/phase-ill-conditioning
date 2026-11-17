@@ -1,0 +1,14 @@
+\begin{tabular}{lccc}
+\toprule
+solver & runs & median $c_M$ & 10\%--90\% \\
+\midrule
+\code{ode15s BDF} & 17 & $11$ & $1.1$--$23$ \\
+\code{ode15s} & 47 & $6.7$ & $0.92$--$13$ \\
+\code{ode23t} & 45 & $7.2$ & $0.72$--$57$ \\
+\code{ode23tb} & 17 & $5.9$ & $0.077$--$117$ \\
+\code{ode23s} & 47 & $3.5$ & $0.018$--$36$ \\
+\code{ode113} & 12 & $0.78$ & $0.26$--$1.6$ \\
+\code{ode23} & 42 & $0.68$ & $0.071$--$1.1$ \\
+\code{ode45} & 42 & $0.018$ & $6.6\cdot10^{-5}$--$0.13$ \\
+\bottomrule
+\end{tabular}

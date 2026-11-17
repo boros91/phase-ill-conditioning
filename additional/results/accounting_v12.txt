@@ -1,0 +1,15 @@
+SciPy scalar: 240 runs, 1 without event; SIR: 60 runs, 1 without event
+SciPy, all             r*Pi < 1e-3        runs  135, with event  135, max eta 0.0128, median 2.58e-06, fraction eta > 0.1: 0.00
+SciPy, all             1e-3 <= r*Pi < 1   runs  110, with event  110, max eta 5.65, median 0.00699, fraction eta > 0.1: 0.17
+SciPy, all             r*Pi >= 1          runs   55, with event   53, max eta 2.46e+04, median 1.05, fraction eta > 0.1: 0.75
+MATLAB flame: 546 runs, 539 completed
+MATLAB, flame          r*Pi < 1e-3        runs  270, with event  270, max eta 0.0412, median 2.61e-06, fraction eta > 0.1: 0.00
+MATLAB, flame          1e-3 <= r*Pi < 1   runs  142, with event  142, max eta 18.4, median 0.0575, fraction eta > 0.1: 0.46
+MATLAB, flame          r*Pi >= 1          runs  127, with event  127, max eta 1.09e+08, median 169, fraction eta > 0.1: 0.94
+MATLAB SIR (first set): 40 runs, 6 without event
+MATLAB second set: 336 runs, 8 without event; by problem {'ghost': 96, 'logistic': 96, 'ml': 48, 'sir': 96}
+MATLAB, second set     r*Pi < 1e-3        runs  184, with event  184, max eta 0.0165, median 4.21e-05, fraction eta > 0.1: 0.00
+MATLAB, second set     1e-3 <= r*Pi < 1   runs  104, with event  104, max eta 1.16, median 0.0234, fraction eta > 0.1: 0.26
+MATLAB, second set     r*Pi >= 1          runs   48, with event   40, max eta 755, median 2.99, fraction eta > 0.1: 0.95
+delay-law fit: 967 scalar runs with event ({'MATLAB': 728, 'SciPy': 239}), 943 used ({'MATLAB': 707, 'SciPy': 236}); smallest eta used 1.42e-10, largest eta left out 9.3e-11
+systems: 249 runs: {('MATLAB', 'ml'): 48, ('MATLAB', 'sir'): 98, ('SciPy', 'ml'): 45, ('SciPy', 'sir'): 58}

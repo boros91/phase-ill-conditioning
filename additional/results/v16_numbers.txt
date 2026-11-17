@@ -1,0 +1,17 @@
+runs: 476, without event: 0
+RK23 theta=1 phi=0.1: |D|/T_e over flame 1e-6, logistic 1e-7, SIR 1e-8 and both tolerances: min 1.14e-04 max 3.14e-04 median 2.19e-04; steps 82..346
+RK23 theta=1 phi=0.03: |D|/T_e over flame 1e-6, logistic 1e-7, SIR 1e-8 and both tolerances: min 5.10e-06 max 7.07e-06 median 6.44e-06; steps 271..515
+RK23 theta=1 phi=0.01: |D|/T_e over flame 1e-6, logistic 1e-7, SIR 1e-8 and both tolerances: min 2.29e-07 max 2.49e-07 median 2.40e-07; steps 816..1410
+RK23 tol 1e-4: steps theta=1, phi=0.1 over standard: 1.00..2.35 (median 1.29)
+RK23 tol 1e-4 arc 0.1: eta/eta_standard: unchanged (within 1%) in 13 of 17 problems; smallest ratio 5.60e-01; largest eta 4.26e+03
+RK23 tol 1e-4 arc 0.01: eta/eta_standard: unchanged (within 1%) in 7 of 17 problems; smallest ratio 6.11e-02; largest eta 700
+RK23 tol 1e-4 trapezoidal 0.1: eta/eta_standard: unchanged (within 1%) in 12 of 17 problems; smallest ratio 1.75e-01; largest eta 2.37e+03
+RK23 tol 1e-4 theta=1 0.1: eta/eta_standard: unchanged (within 1%) in 1 of 17 problems; smallest ratio 4.00e-03; largest eta 77
+RK45 theta=1 phi=0.1: |D|/T_e over flame 1e-6, logistic 1e-7, SIR 1e-8 and both tolerances: min 3.42e-08 max 9.68e-08 median 6.67e-08; steps 79..132
+RK45 theta=1 phi=0.03: |D|/T_e over flame 1e-6, logistic 1e-7, SIR 1e-8 and both tolerances: min 3.04e-11 max 7.61e-10 median 3.77e-10; steps 270..464
+RK45 theta=1 phi=0.01: |D|/T_e over flame 1e-6, logistic 1e-7, SIR 1e-8 and both tolerances: min 2.39e-13 max 4.07e-12 median 2.56e-12; steps 816..1409
+RK45 tol 1e-4: steps theta=1, phi=0.1 over standard: 2.00..7.58 (median 3.51)
+RK45 tol 1e-4 arc 0.1: eta/eta_standard: unchanged (within 1%) in 14 of 17 problems; smallest ratio 1.77e-02; largest eta 122
+RK45 tol 1e-4 arc 0.01: eta/eta_standard: unchanged (within 1%) in 11 of 17 problems; smallest ratio 1.16e-03; largest eta 122
+RK45 tol 1e-4 trapezoidal 0.1: eta/eta_standard: unchanged (within 1%) in 4 of 17 problems; smallest ratio 6.79e-04; largest eta 6.36
+RK45 tol 1e-4 theta=1 0.1: eta/eta_standard: unchanged (within 1%) in 0 of 17 problems; smallest ratio 2.86e-06; largest eta 0.00846

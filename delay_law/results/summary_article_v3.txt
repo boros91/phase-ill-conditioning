@@ -1,0 +1,58 @@
+Numbers quoted in article v3
+
+scalar runs used in the fit: 943 (SciPy 236, MATLAB 707)
+SciPy: weighted sd M0 0.717 M1 0.670 M2 0.568 M3 1.121
+MATLAB: weighted sd M0 1.027 M1 0.670 M2 0.481 M3 1.074
+M2 better than M0 for 12 of 13 solvers; exceptions: ['ode23']
+fitted alpha range: 0.60..1.05
+  ode23s: alpha 0.60, K 0.0414, sd M0 1.54, sd M2 0.46
+  ode23t: alpha 0.65, K 0.229, sd M0 1.24, sd M2 0.19
+  ode23tb: alpha 0.65, K 0.159, sd M0 1.35, sd M2 0.29
+  ode15s: alpha 0.85, K 1.09, sd M0 0.71, sd M2 0.30
+  ode15s_BDF: alpha 0.85, K 0.933, sd M0 0.68, sd M2 0.36
+  BDF: alpha 0.90, K 1.07, sd M0 0.41, sd M2 0.27
+  LSODA: alpha 0.85, K 0.422, sd M0 0.54, sd M2 0.37
+  ode113: alpha 0.95, K 0.293, sd M0 0.49, sd M2 0.29
+  ode23: alpha 0.95, K 0.174, sd M0 0.60, sd M2 0.64
+  ode45: alpha 0.90, K 0.00562, sd M0 1.28, sd M2 1.14
+  RK45: alpha 0.75, K 0.00625, sd M0 1.09, sd M2 0.77
+  DOP853: alpha 0.85, K 0.0024, sd M0 0.80, sd M2 0.73
+  Radau: alpha 1.05, K 0.00208, sd M0 0.75, sd M2 0.70
+
+slopes: groups 207, median |err| Pi 0.147, Lambda 0.054; |err|<0.1 Pi 0.37, Lambda 0.69
+  flame2: groups 94 median slope eta -1.62, Pi -2.00, Lambda -1.76; median|err| Pi 0.30 Lambda 0.05
+  flame3: groups 36 median slope eta -2.16, Pi -2.48, Lambda -2.34; median|err| Pi 0.12 Lambda 0.05
+  ghost: groups 39 median slope eta -0.78, Pi -0.89, Lambda -0.77; median|err| Pi 0.11 Lambda 0.05
+  logistic: groups 38 median slope eta -0.72, Pi -0.80, Lambda -0.70; median|err| Pi 0.07 Lambda 0.06
+
+systems out of sample: n 249; M0 median|res| 0.73 within 1 dec 0.63; M2 median|res| 0.48 within 1 dec 0.78
+  MATLAB ml: n 48 M0 mean -1.07 M2 mean -0.85
+  MATLAB sir: n 98 M0 mean -0.70 M2 mean -0.09
+  SciPy ml: n 45 M0 mean -0.90 M2 mean -0.99
+  SciPy sir: n 58 M0 mean -0.16 M2 mean +0.04
+
+pure relative control: runs 36, ok 36; t* 4.6..1e+06
+  BDF: |D|/t* 1.96e-07..2.17e-05; flame only 1.07e-05..2.17e-05; log10(meas/pred) -1.24..+0.28 mean -0.11; within factor 3: 0.92
+  RK45: |D|/t* 1.92e-07..6.18e-07; flame only 2.23e-07..6.18e-07; log10(meas/pred) -0.16..+0.52 mean +0.15; within factor 3: 0.75
+  Radau: |D|/t* 1.43e-09..1.06e-08; flame only 5.98e-09..1.06e-08; log10(meas/pred) +0.13..+0.54 mean +0.38; within factor 3: 0.67
+
+shift a=0 RK45: D/t* +6.165e-07 eta 1.925e-04 Pi 50.01 Theta_e 0.9999 pred 5.748e-05 steps 73
+shift a=0 BDF: D/t* -2.201e-06 eta 6.870e-04 Pi 50.01 Theta_e 0.9999 pred 1.287e-03 steps 313
+shift a=10 RK45: D/t* +1.497e-03 eta 4.248e-02 Pi 9092 Theta_e 11 pred 6.945e-04 steps 36
+shift a=10 BDF: D/t* -1.612e-03 eta 4.574e-02 Pi 9092 Theta_e 11 pred 4.015e-02 steps 156
+shift a=1000 RK45: D/t* +2.022e-02 eta 6.306e-03 Pi 9991 Theta_e 1001 pred 2.414e-04 steps 23
+shift a=1000 BDF: D/t* -4.158e-02 eta 1.297e-02 Pi 9991 Theta_e 1001 pred 2.784e-02 steps 74
+
+fixed N=2000: delta 1e-01 EE: h 0.01 D +1.3161e-02 D*delta^2 1.316e-04
+fixed N=2000: delta 1e-01 Heun: h 0.01 D +1.1113e-05 D*delta^2 1.111e-07
+fixed N=2000: delta 1e-01 RK4: h 0.01 D +4.6132e-12 D*delta^2 4.613e-14
+fixed N=2000: delta 1e-02 EE: h 0.1 D +3.5661e-01 D*delta^2 3.566e-05
+fixed N=2000: delta 1e-02 Heun: h 0.1 D +1.4986e-03 D*delta^2 1.499e-07
+fixed N=2000: delta 1e-02 RK4: h 0.1 D +4.8592e-08 D*delta^2 4.859e-12
+fixed N=2000: delta 1e-03 EE: h 1 D +5.8044e+00 D*delta^2 5.804e-06
+fixed N=2000: delta 1e-03 Heun: h 1 D +1.4994e-01 D*delta^2 1.499e-07
+fixed N=2000: delta 1e-03 RK4: h 1 D +4.4040e-04 D*delta^2 4.404e-10
+
+coupled eps 1e-01: eps*dtau/dx0 -11.1111 (fd -11.1111); eps*dtau/dz0 -4.7007 (fd -4.7007); eps^2*dtau/dz0 -0.4701; Pi 3.111 Pi_* 2.996
+coupled eps 1e-02: eps*dtau/dx0 -101.0101 (fd -101.0101); eps*dtau/dz0 -49.5200 (fd -49.5200); eps^2*dtau/dz0 -0.4952; Pi 61.65 Pi_* 49.51
+coupled eps 1e-03: eps*dtau/dx0 -1001.0010 (fd -1001.0010); eps*dtau/dz0 -499.5020 (fd -499.5021); eps^2*dtau/dz0 -0.4995; Pi 3923 Pi_* 2699

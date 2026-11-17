@@ -1,0 +1,31 @@
+q,delta,unknown,Pi
+2,0.01,"y, s = |y| + 1e-2 (atol = rtol/100)",49.51475539710834
+2,0.01,"y, s = |y| (relative only)",25.252525252525253
+2,0.01,"ln y, s = 1 (absolute only)",25.25252525252525
+2,0.01,"y^(1-q), s = |u| (relative only)",25.25252525252525
+2,0.01,"y^(1-q), s = 1 (absolute only)",1.0
+2,0.0001,"y, s = |y| + 1e-2 (atol = rtol/100)",247573.77698554166
+2,0.0001,"y, s = |y| (relative only)",2500.2500250025
+2,0.0001,"ln y, s = 1 (absolute only)",2500.2500250025005
+2,0.0001,"y^(1-q), s = |u| (relative only)",2500.2500250025005
+2,0.0001,"y^(1-q), s = 1 (absolute only)",1.0
+2,1e-06,"y, s = |y| + 1e-2 (atol = rtol/100)",2451227941.42402
+2,1e-06,"y, s = |y| (relative only)",250000.25000024997
+2,1e-06,"ln y, s = 1 (absolute only)",250000.25000024997
+2,1e-06,"y^(1-q), s = |u| (relative only)",250000.25000024997
+2,1e-06,"y^(1-q), s = 1 (absolute only)",1.0
+3,0.1,"y, s = |y| + 1e-2 (atol = rtol/100)",14.97821350762527
+3,0.1,"y, s = |y| (relative only)",13.888888888888888
+3,0.1,"ln y, s = 1 (absolute only)",13.888888888888888
+3,0.1,"y^(1-q), s = |u| (relative only)",13.888888888888886
+3,0.1,"y^(1-q), s = 1 (absolute only)",1.0
+3,0.01,"y, s = |y| + 1e-2 (atol = rtol/100)",2475.737769855417
+3,0.01,"y, s = |y| (relative only)",1262.6262626262626
+3,0.01,"ln y, s = 1 (absolute only)",1262.6262626262626
+3,0.01,"y^(1-q), s = |u| (relative only)",1262.6262626262628
+3,0.01,"y^(1-q), s = 1 (absolute only)",1.0
+3,0.001,"y, s = |y| + 1e-2 (atol = rtol/100)",1349388.604290565
+3,0.001,"y, s = |y| (relative only)",125125.12512512514
+3,0.001,"ln y, s = 1 (absolute only)",125125.12512512514
+3,0.001,"y^(1-q), s = |u| (relative only)",125125.12512512514
+3,0.001,"y^(1-q), s = 1 (absolute only)",1.0

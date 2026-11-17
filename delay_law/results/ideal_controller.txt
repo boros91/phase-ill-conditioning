@@ -1,0 +1,8 @@
+Idealized controller: measured delay / predicted leading term
+
+Euler  tol=1e-08: ratio min 1.0000 max 1.0019 (n=12); |D| from 4.34e-04 to 6.68e+03; steps 29674..129382
+Euler  tol=1e-06: ratio min 0.9998 max 1.0182 (n=12); |D| from 4.34e-03 to 6.79e+04; steps 2970..12945
+Euler  tol=1e-04: ratio min 0.9973 max 1.1420 (n=12); |D| from 4.34e-02 to 7.61e+05; steps 300..1301
+HeunEx tol=1e-08: ratio min 0.9927 max 1.0040 (n=12); |D| from 2.31e-08 to 2.51e+01; steps 29671..129369
+HeunEx tol=1e-06: ratio min 0.9341 max 1.0392 (n=12); |D| from 2.31e-06 to 2.60e+03; steps 2968..12932
+HeunEx tol=1e-04: ratio min 0.5750 max 1.2393 (n=12); |D| from 2.29e-04 to 3.10e+05; steps 297..1288

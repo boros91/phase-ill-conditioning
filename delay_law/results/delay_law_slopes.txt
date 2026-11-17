@@ -1,0 +1,9 @@
+Slopes of log eta against log parameter (fixed solver, tolerance, ratio): measured minus predicted
+
+flame2    groups= 94  slope eta median -1.62  Pi: median slope -2.00, median |error| 0.30   Lambda: median slope -1.76, median |error| 0.05
+flame3    groups= 36  slope eta median -2.16  Pi: median slope -2.48, median |error| 0.12   Lambda: median slope -2.34, median |error| 0.05
+ghost     groups= 39  slope eta median -0.78  Pi: median slope -0.89, median |error| 0.11   Lambda: median slope -0.77, median |error| 0.05
+logistic  groups= 38  slope eta median -0.72  Pi: median slope -0.80, median |error| 0.07   Lambda: median slope -0.70, median |error| 0.06
+
+all groups=207: median |error| Pi 0.147, Lambda 0.054; |error|<0.1: Pi 0.37, Lambda 0.69
+ghost groups (AbsTol = RelTol/100): measured slope range -0.99 .. -0.55, Pi slope -0.89, Lambda slope range -0.92 .. -0.70

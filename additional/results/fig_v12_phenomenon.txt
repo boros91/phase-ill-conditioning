@@ -1,0 +1,11 @@
+flame RK45: steps 3050, delay at the first step past y=1/2: -0.1087, max error 0.0148
+flame BDF: steps 103, delay at the first step past y=1/2: -131.5, max error 0.991
+flame LSODA: steps 109, delay at the first step past y=1/2: -148.2, max error 0.993
+SIR I0=1e-8: reference event time T_e = 95.952907
+SIR I0=1e-8: reference peak of I at t = 96.00
+SIR RK45: event S = gamma/beta at t = 96.8163, delay +0.863 days
+SIR RK45: steps 26, max I = 0.3 at t = 96.8, min I = 1e-08
+SIR BDF: event S = gamma/beta not reached on [0, 220]
+SIR BDF: steps 6, max I = 3.82e-08 at t = 5.3, min I = -1.9e-08
+SIR LSODA: event S = gamma/beta at t = 94.2956, delay -1.657 days
+SIR LSODA: steps 85, max I = 0.3 at t = 94.3, min I = 1e-08

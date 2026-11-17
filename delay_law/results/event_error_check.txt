@@ -1,0 +1,18 @@
+Event-error definitions and first-order representation (SciPy runs)
+
+ml: runs 30 (of 30 completed); |D_end-D_root|/|D_root|: median 9.66e-04, max 8.89e+00
+   |D_hat-D_root|/|D_root|: median 3.96e-03, 90% 5.85e-02, max 8.67e+00; same sign 1.00
+   |D_root|/A (1 = no cancellation): median 0.568, 10-90% 0.129-0.923
+     BDF   : |D_root|/A median 0.436
+     DOP853: |D_root|/A median 0.838
+     LSODA : |D_root|/A median 0.637
+     RK45  : |D_root|/A median 0.879
+     Radau : |D_root|/A median 0.192
+sir: runs 59 (of 59 completed); |D_end-D_root|/|D_root|: median 9.13e-04, max 2.98e+00
+   |D_hat-D_root|/|D_root|: median 1.26e-02, 90% 6.80e-01, max 2.96e+00; same sign 0.97
+   |D_root|/A (1 = no cancellation): median 0.909, 10-90% 0.115-1.062
+     BDF   : |D_root|/A median 0.845
+     DOP853: |D_root|/A median 0.995
+     LSODA : |D_root|/A median 0.806
+     RK45  : |D_root|/A median 0.926
+     Radau : |D_root|/A median 1.000

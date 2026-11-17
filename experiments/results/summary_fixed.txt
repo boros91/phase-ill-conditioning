@@ -1,0 +1,61 @@
+Fixed-step experiment: summary numbers
+
+flame    1e-02 ev=0.5      h=0.25: n=414 EE=+8.8681e-01 pred=+8.9262e-01 ratio=0.9935 IE/-EE=1.0161 Heun=+9.3162e-03 predHeun=+9.5146e-03 ratioH=0.9792 RK4=+1.964e-06 BDF1e-4: D=-0.1165895281402669 steps=41 ok=True
+flame    1e-04 ev=0.5      h=0.25: n=40037 EE=+2.0361e+00 pred=+2.0427e+00 ratio=0.9968 IE/-EE=1.0081 Heun=+9.4826e-03 predHeun=+9.8213e-03 ratioH=0.9655 RK4=+1.883e-06 BDF1e-4: D=-131.51992497702486 steps=70 ok=True
+flame    1e-06 ev=0.5      h=0.25: n=4000061 EE=+3.1944e+00 pred=+3.1939e+00 ratio=1.0001 IE/-EE=1.0034 Heun=+9.6612e-03 predHeun=+9.8244e-03 ratioH=0.9834 RK4=+1.953e-06 BDF1e-4: D=-100480.27281671402 steps=100 ok=True
+logistic 1e-01 ev=0.5      h=0.25: n=10 EE=+1.2812e-01 pred=+1.2771e-01 ratio=1.0032 IE/-EE=0.9757 Heun=+9.2604e-03 predHeun=+1.0388e-02 ratioH=0.8915 RK4=+1.740e-05 BDF1e-4: D=0.0002013297110772 steps=19 ok=True
+logistic 1e-03 ev=0.5      h=0.25: n=31 EE=+6.7147e-01 pred=+6.9031e-01 ratio=0.9727 IE/-EE=1.0621 Heun=+4.7931e-02 predHeun=+5.6352e-02 ratioH=0.8506 RK4=+1.303e-04 BDF1e-4: D=-0.0037380165272242 steps=31 ok=True
+logistic 1e-05 ev=0.5      h=0.25: n=51 EE=+1.2261e+00 pred=+1.2658e+00 ratio=0.9686 IE/-EE=1.0735 Heun=+8.8397e-02 predHeun=+1.0430e-01 ratioH=0.8475 RK4=+2.523e-04 BDF1e-4: D=-0.1841478481999665 steps=40 ok=True
+logistic 1e-07 ev=0.5      h=0.25: n=72 EE=+1.7803e+00 pred=+1.8415e+00 ratio=0.9668 IE/-EE=1.0782 Heun=+1.2822e-01 predHeun=+1.5227e-01 ratioH=0.8421 RK4=+3.739e-04 BDF1e-4: D=nan steps=29 ok=False
+ghost    1e-02 ev=0.1      h=0.25: n=89 EE=-5.2188e-01 pred=-4.9025e-01 ratio=1.0645 IE/-EE=0.8789 Heun=+2.8184e-02 predHeun=+2.4973e-02 ratioH=1.1286 RK4=+4.110e-05 BDF1e-4: D=nan steps=nan ok=True
+ghost    1e-08 ev=0.1      h=0.25: n=125618 EE=-6.1265e-01 pred=-5.7565e-01 ratio=1.0643 IE/-EE=0.8890 Heun=+3.7909e-02 predHeun=+3.4362e-02 ratioH=1.1032 RK4=+4.670e-05 BDF1e-4: D=nan steps=nan ok=True
+ghost    1e-02 ev=1.0      h=0.25: n=118 EE=-3.3137e-02 pred=+0.0000e+00 ratio=nan IE/-EE=-4.0173 Heun=+5.0648e-02 predHeun=+5.0241e-02 ratioH=1.0081 RK4=+1.012e-04 BDF1e-4: D=-0.0127529579773089 steps=93 ok=True
+ghost    1e-08 ev=1.0      h=0.25: n=125656 EE=-3.8858e-02 pred=+0.0000e+00 ratio=nan IE/-EE=-3.6164 Heun=+6.2590e-02 predHeun=+6.2487e-02 ratioH=1.0016 RK4=+1.092e-04 BDF1e-4: D=-202.83422034598695 steps=231 ok=True
+sir      1e-02 ev=0.33333333333333337 h=0.1: n=268 EE=+9.0000e-02 pred=+9.0450e-02 ratio=0.9950 IE/-EE=nan Heun=+7.3057e-04 predHeun=+nan ratioH=nan RK4=+1.196e-08 BDF1e-4: D=-0.001003549209642 steps=31 ok=True
+sir      1e-04 ev=0.33333333333333337 h=0.1: n=503 EE=+3.1797e-01 pred=+3.1922e-01 ratio=0.9961 IE/-EE=nan Heun=+2.2183e-03 predHeun=+nan ratioH=nan RK4=+4.126e-08 BDF1e-4: D=-0.1223761578717841 steps=39 ok=True
+sir      1e-06 ev=0.33333333333333337 h=0.1: n=735 EE=+5.4795e-01 pred=+5.4946e-01 ratio=0.9973 IE/-EE=nan Heun=+3.7308e-03 predHeun=+nan ratioH=nan RK4=+7.144e-08 BDF1e-4: D=-3.5455377288176493 steps=43 ok=True
+sir      1e-08 ev=0.33333333333333337 h=0.1: n=968 EE=+7.7708e-01 pred=+7.7972e-01 ratio=0.9966 IE/-EE=nan Heun=+5.2429e-03 predHeun=+nan ratioH=nan RK4=+1.016e-07 BDF1e-4: D=nan steps=7 ok=False
+ml       1e-01 ev=spike 10 h=0.05: n=116420 EE=-2.8184e-01 pred=-2.8916e-01 ratio=0.9747 IE/-EE=nan Heun=+4.0771e-03 predHeun=+nan ratioH=nan RK4=+7.405e-08 BDF1e-4: D=-12.391293099661198 steps=1531 ok=True
+ml       1e-02 ev=spike 10 h=0.05: n=357815 EE=-2.7993e-01 pred=-2.8724e-01 ratio=0.9745 IE/-EE=nan Heun=+4.2678e-03 predHeun=+nan ratioH=nan RK4=-6.053e-08 BDF1e-4: D=-60.79652190417619 steps=1711 ok=True
+
+h-halving sir 1e-02 EE  : D(h)=+9.0000e-02 D(h/2)=+4.5182e-02 ratio=1.992
+h-halving sir 1e-02 Heun: D(h)=+7.3057e-04 D(h/2)=+1.8369e-04 ratio=3.977
+h-halving sir 1e-02 RK4 : D(h)=+1.1957e-08 D(h/2)=+7.5208e-10 ratio=15.899
+h-halving sir 1e-04 EE  : D(h)=+3.1797e-01 D(h/2)=+1.5929e-01 ratio=1.996
+h-halving sir 1e-04 Heun: D(h)=+2.2183e-03 D(h/2)=+5.5848e-04 ratio=3.972
+h-halving sir 1e-04 RK4 : D(h)=+4.1256e-08 D(h/2)=+2.5979e-09 ratio=15.880
+h-halving sir 1e-06 EE  : D(h)=+5.4795e-01 D(h/2)=+2.7420e-01 ratio=1.998
+h-halving sir 1e-06 Heun: D(h)=+3.7308e-03 D(h/2)=+9.3934e-04 ratio=3.972
+h-halving sir 1e-06 RK4 : D(h)=+7.1442e-08 D(h/2)=+4.4986e-09 ratio=15.881
+h-halving sir 1e-08 EE  : D(h)=+7.7708e-01 D(h/2)=+3.8931e-01 ratio=1.996
+h-halving sir 1e-08 Heun: D(h)=+5.2429e-03 D(h/2)=+1.3203e-03 ratio=3.971
+h-halving sir 1e-08 RK4 : D(h)=+1.0163e-07 D(h/2)=+6.4003e-09 ratio=15.879
+h-halving ml 1e-01 EE  : D(h)=-2.8184e-01 D(h/2)=-1.3990e-01 ratio=2.015
+h-halving ml 1e-01 Heun: D(h)=+4.0771e-03 D(h/2)=+1.0268e-03 ratio=3.971
+h-halving ml 1e-01 RK4 : D(h)=+7.4053e-08 D(h/2)=-1.0486e-08 ratio=-7.062
+h-halving ml 1e-02 EE  : D(h)=-2.7993e-01 D(h/2)=-1.3892e-01 ratio=2.015
+h-halving ml 1e-02 Heun: D(h)=+4.2678e-03 D(h/2)=+1.0741e-03 ratio=3.973
+h-halving ml 1e-02 RK4 : D(h)=-6.0525e-08 D(h/2)=-7.9712e-08 ratio=0.759
+
+ML 1e-01 h=0.05 EE: D1=-2.9275e-02 D10=-2.8184e-01 D10/D1=9.627
+ML 1e-01 h=0.05 Heun: D1=+4.1595e-04 D10=+4.0771e-03 D10/D1=9.802
+ML 1e-01 h=0.025 EE: D1=-1.4548e-02 D10=-1.3990e-01 D10/D1=9.616
+ML 1e-01 h=0.025 Heun: D1=+1.0442e-04 D10=+1.0268e-03 D10/D1=9.833
+ML 1e-02 h=0.05 EE: D1=-2.9089e-02 D10=-2.7993e-01 D10/D1=9.623
+ML 1e-02 h=0.05 Heun: D1=+4.3615e-04 D10=+4.2678e-03 D10/D1=9.785
+ML 1e-02 h=0.025 EE: D1=-1.4451e-02 D10=-1.3892e-01 D10/D1=9.613
+ML 1e-02 h=0.025 Heun: D1=+1.0948e-04 D10=+1.0741e-03 D10/D1=9.811
+
+EE/pred logistic: n=4 min=0.9668 max=1.0032
+EE/pred ghost   : n=4 min=1.0641 max=1.0712
+EE/pred sir     : n=8 min=0.9950 max=0.9990
+EE/pred ml      : n=8 min=0.9673 max=1.0127
+EE/pred flame   : n=5 min=0.9935 max=1.0001
+IE/(-EE) logistic: min=0.9757 max=1.0782
+IE/(-EE) ghost   : min=-10.4511 max=0.8907
+IE/(-EE) flame   : min=1.0034 max=1.0161
+
+eta EE flame_q2_d1e-06: D=3.1944 Theta_e=4.08 eta=0.783
+eta EE logistic_x1e-07: D=1.7803 Theta_e=2.04 eta=0.873
+eta EE sir 1e-08 h=0.1: Theta_e=11.427 eta=0.0680
+eta EE ml 1e-01 spike10 h=0.05: Theta_e=1.0235 eta=-0.2754

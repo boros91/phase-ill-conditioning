@@ -1,0 +1,40 @@
+Numbers added in article v7
+
+ml: matched runs 30; mean log10(|D|/P) -0.758 = mean log10(A/P) -0.394 + mean log10(|D|/A) -0.363; medians -0.704, -0.168, -0.239; share of the mean due to cancellation 0.48
+   BDF   : mean log10(|D|/P) -0.56, log10(A/P) -0.19, log10(|D|/A) -0.37
+   DOP853: mean log10(|D|/P) -1.14, log10(A/P) -1.03, log10(|D|/A) -0.11
+   LSODA : mean log10(|D|/P) -0.14, log10(A/P) +0.09, log10(|D|/A) -0.22
+   RK45  : mean log10(|D|/P) -1.49, log10(A/P) -1.11, log10(|D|/A) -0.37
+   Radau : mean log10(|D|/P) -0.46, log10(A/P) +0.28, log10(|D|/A) -0.74
+sir: matched runs 58; mean log10(|D|/P) +0.046 = mean log10(A/P) +0.253 + mean log10(|D|/A) -0.207; medians +0.110, +0.213, -0.039; share of the mean due to cancellation -4.52
+   BDF   : mean log10(|D|/P) -0.39, log10(A/P) +0.01, log10(|D|/A) -0.41
+   DOP853: mean log10(|D|/P) +0.56, log10(A/P) +0.58, log10(|D|/A) -0.02
+   LSODA : mean log10(|D|/P) -0.48, log10(A/P) -0.13, log10(|D|/A) -0.35
+   RK45  : mean log10(|D|/P) +0.20, log10(A/P) +0.34, log10(|D|/A) -0.15
+   Radau : mean log10(|D|/P) +0.33, log10(A/P) +0.45, log10(|D|/A) -0.12
+
+time control LSODA: steps ratio 2.75-3.58, f-eval ratio 2.75-3.52 (n=6); max |D10| 0.074 ms against standard max 159.740 ms
+time control RK45: steps ratio 1.71-3.49, f-eval ratio 1.66-3.38 (n=6); max |D10| 0.015 ms against standard max 0.063 ms
+time control LSODA tol=1e-06: max |D10| 7.92e-04 ms
+time control LSODA tol=1e-04: max |D10| 7.43e-02 ms
+time control RK45 tol=1e-06: max |D10| 7.37e-05 ms
+time control RK45 tol=1e-04: max |D10| 1.51e-02 ms
+max |D10| over Delta and tol, standard BDF: 868.647 ms
+max |D10| over Delta and tol, standard DOP853: 0.038 ms
+max |D10| over Delta and tol, standard LSODA: 159.740 ms
+max |D10| over Delta and tol, standard RK45: 0.063 ms
+max |D10| over Delta and tol, standard Radau: 2.840 ms
+max |D10| over Delta and tol, time control LSODA: 0.074 ms
+max |D10| over Delta and tol, time control RK45: 0.015 ms
+   LSODA Delta=1e-03 tol=1e-06: steps x3.18 f-evals x3.52 D10 -26.0888 -> +0.0008
+   LSODA Delta=1e-03 tol=1e-04: steps x3.58 f-evals x3.49 D10 -159.7400 -> +0.0743
+   RK45  Delta=1e-03 tol=1e-06: steps x3.09 f-evals x3.06 D10 +0.0040 -> -0.0001
+   RK45  Delta=1e-03 tol=1e-04: steps x1.71 f-evals x1.66 D10 +0.0632 -> -0.0024
+   LSODA Delta=1e-02 tol=1e-06: steps x2.95 f-evals x3.42 D10 -3.6539 -> +0.0005
+   LSODA Delta=1e-02 tol=1e-04: steps x3.15 f-evals x3.06 D10 -45.1238 -> +0.0557
+   RK45  Delta=1e-02 tol=1e-06: steps x3.49 f-evals x3.38 D10 +0.0037 -> -0.0001
+   RK45  Delta=1e-02 tol=1e-04: steps x2.40 f-evals x2.55 D10 +0.0015 -> -0.0151
+   LSODA Delta=1e-01 tol=1e-06: steps x2.75 f-evals x2.75 D10 -0.2113 -> +0.0004
+   LSODA Delta=1e-01 tol=1e-04: steps x2.85 f-evals x2.86 D10 -11.3128 -> +0.0455
+   RK45  Delta=1e-01 tol=1e-06: steps x3.28 f-evals x3.21 D10 +0.0023 -> -0.0001
+   RK45  Delta=1e-01 tol=1e-04: steps x2.87 f-evals x2.97 D10 -0.0053 -> -0.0148

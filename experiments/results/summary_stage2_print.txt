@@ -1,0 +1,131 @@
+method constants c = eta/(tol*Pi), runs with tol*Pi >= 1e-3:
+     kind  method   n  median     q10   q90     min   max
+0  scalar     BDF  26     4.5     1.2   7.6     0.1   9.6
+1  scalar   LSODA  27       3    0.62   5.3   0.046   8.1
+2  scalar    RK45  27   0.073 0.00087   1.7 8.1e-05   6.8
+3  scalar  DOP853  27   0.015 0.00049  0.05 2.2e-05 0.073
+4  scalar   Radau  27  0.0015 6.8e-05 0.011 3.5e-05  0.04
+5     SIR     BDF   5     2.2    0.71   2.5    0.71   2.5
+6     SIR   LSODA   6    0.86   0.073   1.8    0.01   1.9
+7     SIR    RK45   6   0.045  0.0031  0.13  0.0017  0.13
+8     SIR  DOP853   6   0.037  0.0025 0.094 0.00019 0.095
+9     SIR   Radau   6  0.0098 0.00077 0.014 0.00077 0.014
+
+tol*Pi < 1e-3: max eta = 1.28e-02 (135 runs); tol*Pi >= 1: median eta = 1.05, min 8.62e-04 (53 runs)
+
+runs without event: logistic_x1e-07 BDF 1e-04; SIR I0=1e-08 BDF 1e-04 (min I = -1.9e-08)
+
+SIR estimator: 59 runs; median rel. discrepancy 1.76e-03; fraction within 5%: 0.81; within 25%: 0.98
+
+largest discrepancies:
+              I0  method       tol         D      Dhat       rel
+15  1.000000e-04    RK45  0.000100 -0.000256  0.000101  1.393288
+57  1.000000e-08   Radau  0.000100 -2.937496 -2.224374  0.242765
+51  1.000000e-08   LSODA  0.000100 -5.091684 -3.964279  0.221421
+0   1.000000e-02    RK45  0.000100 -0.002500 -0.002114  0.154234
+9   1.000000e-02     BDF  0.000100 -0.001004 -0.000859  0.143586
+4   1.000000e-02  DOP853  0.000001 -0.000008 -0.000007  0.098092
+
+               case            Pi    Pi_relative      x_argmax   Theta_e       T_event
+0   flame_q2_d1e-02  4.951476e+01      25.252525  1.000000e-02  4.080000  1.025951e+02
+1   flame_q2_d1e-03  2.698777e+03     250.250250  1.000000e-03  4.080000  1.004907e+03
+2   flame_q2_d1e-04  2.475738e+05    2500.250025  1.000000e-04  4.080000  1.000721e+04
+3   flame_q2_d1e-05  2.453456e+07   25000.250003  1.000000e-05  4.080000  1.000095e+05
+4   flame_q2_d1e-06  2.451228e+09  250000.250000  1.000000e-06  4.080000  1.000012e+06
+5   flame_q3_d1e-01  1.497821e+01      13.888889  1.000000e-01  8.160000  5.819722e+01
+6   flame_q3_d1e-02  2.475738e+03    1262.626263  1.000000e-02  8.160000  5.100595e+03
+7   flame_q3_d1e-03  1.349389e+06  125125.125125  1.000000e-03  8.160000  5.010029e+05
+8      ghost_e1e-02  5.524938e+00       5.050000 -9.050000e-02  1.000000  2.942255e+01
+9      ghost_e1e-04  1.195274e+02      50.005000  4.149540e-03  1.009899  3.121593e+02
+10     ghost_e1e-06  9.925691e+03     500.000500  4.988845e-05  1.009999  3.139593e+03
+11     ghost_e1e-08  9.901238e+05    5000.000050 -5.011872e-07  1.010000  3.141393e+04
+12  logistic_x1e-01  1.000000e+00       1.000000  5.000000e-01  2.040000  2.197225e+00
+13  logistic_x1e-03  5.397554e+00       1.000000  1.000000e-03  2.040000  6.906755e+00
+14  logistic_x1e-05  4.906912e+02       1.000000  1.000000e-05  2.040000  1.151292e+01
+15  logistic_x1e-07  4.902010e+04       1.000000  1.000000e-07  2.040000  1.611810e+01
+
+             I0         Te    Theta_e             Pi  Pi_relative        Pi_star  Pi_star_relative
+0  1.000000e-02  26.632580  11.300823       3.207221     2.782890       1.242267          1.249037
+1  1.000000e-04  49.897044  11.425558      49.653226     5.924827      44.205786          1.247309
+2  1.000000e-06  72.926998  11.426813    4384.663698     9.038595    4376.117487          1.247347
+3  1.000000e-08  95.952907  11.426825  437578.943528    12.151884  437567.299146          1.247117
+
+orbit test verdicts:
+ case             verdict                 
+flame_q2_d1e-04  phase error                 8
+flame_q3_d1e-02  error at tolerance level    1
+                 phase error                 7
+ghost_e1e-06     error at tolerance level    2
+                 phase error                 5
+logistic_x1e-01  error at tolerance level    8
+logistic_x1e-07  phase error                 8
+lorenz           not phase-dominated         8
+sir_I1e-06       error at tolerance level    1
+                 phase error                 7
+sir_I1e-08       phase error                 8
+
+max Eorbit/Etime for phase verdicts: 0.0362175116784091
+               case method       tol         Etime        Eorbit         ratio     D12_event                   verdict
+0   flame_q2_d1e-04   RK45  0.000100  1.877191e-02  1.083466e-04  5.771739e-03  1.228608e-01               phase error
+1   flame_q2_d1e-04   RK45  0.000001  7.221189e-03  1.102198e-06  1.526339e-04 -5.064746e-02               phase error
+2   flame_q2_d1e-04  LSODA  0.000100  9.908286e-01  2.843337e-06  2.869656e-06  1.230542e+02               phase error
+3   flame_q2_d1e-04  LSODA  0.000001  4.571380e-01  3.401415e-08  7.440673e-08  3.523360e+00               phase error
+4   flame_q2_d1e-04    BDF  0.000100  9.890434e-01  1.733176e-05  1.752376e-05  1.047189e+02               phase error
+5   flame_q2_d1e-04    BDF  0.000001  5.002219e-01  1.821534e-07  3.641452e-07  3.980716e+00               phase error
+6   flame_q2_d1e-04  Radau  0.000100  1.253216e-02  1.781010e-07  1.421152e-05 -8.755474e-02               phase error
+7   flame_q2_d1e-04  Radau  0.000001  1.593490e-04  2.708613e-10  1.699799e-06 -1.121880e-03               phase error
+8   flame_q3_d1e-02   RK45  0.000100  2.898535e-03  1.049777e-04  3.621751e-02 -2.891271e-02               phase error
+9   flame_q3_d1e-02   RK45  0.000001  4.486816e-04  1.096234e-06  2.443233e-03 -4.493739e-03               phase error
+10  flame_q3_d1e-02  LSODA  0.000100  5.711945e-01  5.248951e-05  9.189428e-05  7.924646e+00               phase error
+11  flame_q3_d1e-02  LSODA  0.000001  1.534675e-02  2.920571e-08  1.903055e-06  1.415613e-01               phase error
+12  flame_q3_d1e-02    BDF  0.000100  5.745940e-01  7.452373e-06  1.296981e-05  8.022226e+00               phase error
+13  flame_q3_d1e-02    BDF  0.000001  1.655183e-02  5.213094e-08  3.149557e-06  1.528021e-01               phase error
+14  flame_q3_d1e-02  Radau  0.000100  2.129732e-03  6.757668e-08  3.173014e-05 -2.119767e-02               phase error
+15  flame_q3_d1e-02  Radau  0.000001  9.264322e-06  4.805394e-10  5.186989e-05 -9.223345e-05  error at tolerance level
+16     ghost_e1e-06   RK45  0.000100  1.661163e-02  0.000000e+00  0.000000e+00 -1.668715e+00               phase error
+17     ghost_e1e-06   RK45  0.000001  1.986958e-04  0.000000e+00  0.000000e+00 -1.613748e-02               phase error
+18     ghost_e1e-06  LSODA  0.000100  8.816243e-03  1.757759e-24  1.993773e-22  6.229934e-01               phase error
+19     ghost_e1e-06  LSODA  0.000001  4.361563e-04  0.000000e+00  0.000000e+00  3.500233e-02               phase error
+20     ghost_e1e-06    BDF  0.000001  3.068804e-04  0.000000e+00  0.000000e+00  2.456712e-02               phase error
+21     ghost_e1e-06  Radau  0.000100  5.276601e-05  6.617445e-24  1.254111e-19  4.308747e-03  error at tolerance level
+22     ghost_e1e-06  Radau  0.000001  7.629315e-08  0.000000e+00  0.000000e+00 -3.747048e-05  error at tolerance level
+23  logistic_x1e-01   RK45  0.000100  1.141937e-04  7.792937e-05  6.824313e-01  3.437443e-05  error at tolerance level
+24  logistic_x1e-01   RK45  0.000001  1.886056e-06  4.593292e-07  2.435396e-01  6.373141e-07  error at tolerance level
+25  logistic_x1e-01  LSODA  0.000100  5.650156e-05  2.786781e-06  4.932220e-02 -9.242897e-05  error at tolerance level
+26  logistic_x1e-01  LSODA  0.000001  6.937233e-07  2.860421e-08  4.123289e-02  2.845172e-07  error at tolerance level
+27  logistic_x1e-01    BDF  0.000100  2.159385e-04  7.884105e-06  3.651088e-02 -1.951853e-04  error at tolerance level
+28  logistic_x1e-01    BDF  0.000001  1.287328e-06  2.751456e-08  2.137338e-02  4.158229e-06  error at tolerance level
+29  logistic_x1e-01  Radau  0.000100  1.975524e-05  1.085897e-06  5.496755e-02  3.366055e-07  error at tolerance level
+30  logistic_x1e-01  Radau  0.000001  1.053449e-07  4.124756e-10  3.915479e-03 -1.261518e-08  error at tolerance level
+31  logistic_x1e-07   RK45  0.000100  1.075748e-01  4.872024e-05  4.528965e-04 -4.319289e-01               phase error
+32  logistic_x1e-07   RK45  0.000001  1.917137e-03  4.488283e-07  2.341138e-04 -7.668609e-03               phase error
+33  logistic_x1e-07  LSODA  0.000100  4.154823e-02  2.672527e-06  6.432349e-05  1.662681e-01               phase error
+34  logistic_x1e-07  LSODA  0.000001  1.085392e-02  2.797219e-08  2.577151e-06  4.341750e-02               phase error
+35  logistic_x1e-07    BDF  0.000100  1.000000e+00  2.798057e-07  2.798057e-07           inf               phase error
+36  logistic_x1e-07    BDF  0.000001  3.980242e-02  3.074490e-08  7.724380e-07  1.592937e-01               phase error
+37  logistic_x1e-07  Radau  0.000100  3.483195e-03  4.935161e-08  1.416849e-05  1.392190e-02               phase error
+38  logistic_x1e-07  Radau  0.000001  1.758141e-04  1.129235e-09  6.422895e-06  7.032565e-04               phase error
+39       sir_I1e-06   RK45  0.000100  4.005462e-02  1.215266e-04  3.034021e-03 -6.060000e-01               phase error
+40       sir_I1e-06   RK45  0.000001  1.676255e-04  8.134842e-07  4.852985e-03 -2.521349e-03               phase error
+41       sir_I1e-06  LSODA  0.000100  1.307112e-01  9.730759e-05  7.444469e-04  1.979225e+00               phase error
+42       sir_I1e-06  LSODA  0.000001  3.919112e-03  1.099260e-06  2.804869e-04  5.904371e-02               phase error
+43       sir_I1e-06    BDF  0.000100  1.799432e-01  5.075295e-05  2.820499e-04  2.735137e+00               phase error
+44       sir_I1e-06    BDF  0.000001  7.032348e-03  2.956815e-06  4.204592e-04  1.059657e-01               phase error
+45       sir_I1e-06  Radau  0.000100  1.115804e-04  1.056779e-05  9.471008e-02  1.342153e-03  error at tolerance level
+46       sir_I1e-06  Radau  0.000001  4.426584e-05  9.070394e-08  2.049073e-03  6.662940e-04               phase error
+47       sir_I1e-08   RK45  0.000100  6.770146e-03  8.707480e-05  1.286158e-02 -1.024255e-01               phase error
+48       sir_I1e-08   RK45  0.000001  4.003136e-02  8.609878e-07  2.150783e-05 -6.035928e-01               phase error
+49       sir_I1e-08  LSODA  0.000100  4.180483e-01  9.988712e-05  2.389368e-04  6.630000e+00               phase error
+50       sir_I1e-08  LSODA  0.000001  1.206694e-02  1.030355e-06  8.538661e-05  1.818528e-01               phase error
+51       sir_I1e-08    BDF  0.000100  1.000000e+00  8.013538e-08  8.013538e-08           inf               phase error
+52       sir_I1e-08    BDF  0.000001  1.794941e-01  2.699270e-06  1.503821e-05  2.729281e+00               phase error
+53       sir_I1e-08  Radau  0.000100  1.781470e-01  1.017088e-05  5.709264e-05  2.708422e+00               phase error
+54       sir_I1e-08  Radau  0.000001  8.537271e-05  1.148633e-07  1.345433e-03  1.286568e-03               phase error
+55           lorenz   RK45  0.000100  1.723060e+00  1.128789e+00  6.551076e-01 -1.085500e+01       not phase-dominated
+56           lorenz   RK45  0.000001  1.589796e+00  9.215889e-01  5.796899e-01 -5.089500e+00       not phase-dominated
+57           lorenz  LSODA  0.000100  1.717824e+00  1.158930e+00  6.746503e-01 -5.757500e+00       not phase-dominated
+58           lorenz  LSODA  0.000001  1.706672e+00  9.527063e-01  5.582245e-01 -5.902500e+00       not phase-dominated
+59           lorenz    BDF  0.000100  1.699346e+00  1.115089e+00  6.561871e-01 -7.102500e+00       not phase-dominated
+60           lorenz    BDF  0.000001  1.764862e+00  1.124644e+00  6.372420e-01 -5.359500e+00       not phase-dominated
+61           lorenz  Radau  0.000100  1.853279e+00  1.049657e+00  5.663785e-01 -5.414000e+00       not phase-dominated
+62           lorenz  Radau  0.000001  1.576894e+00  1.051529e+00  6.668357e-01 -3.766000e+00       not phase-dominated

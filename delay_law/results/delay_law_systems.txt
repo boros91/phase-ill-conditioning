@@ -1,0 +1,8 @@
+Systems, out of sample (alpha, K, c from the scalar fit). log10(eta/prediction):
+
+MATLAB ml   n= 48  M0: mean -1.07 sd 0.58 within 1 decade 0.42   M2: mean -0.85 sd 0.57 within 1 decade 0.62
+MATLAB sir  n= 98  M0: mean -0.70 sd 0.82 within 1 decade 0.65   M2: mean -0.09 sd 0.55 within 1 decade 0.91
+SciPy  ml   n= 45  M0: mean -0.90 sd 1.08 within 1 decade 0.60   M2: mean -0.99 sd 0.97 within 1 decade 0.56
+SciPy  sir  n= 58  M0: mean -0.16 sd 0.82 within 1 decade 0.81   M2: mean +0.04 sd 0.75 within 1 decade 0.84
+
+all n=249: M0 median |res| 0.73, within 1 decade 0.63; M2 median |res| 0.48, within 1 decade 0.78

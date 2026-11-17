@@ -1,0 +1,7 @@
+Leave-one-family-out prediction of the held-out family (log10 measured/predicted eta)
+
+flame2    n= 497  M0: median|res| 0.60, within 1 decade 0.67   M2: median|res| 0.26, within 1 decade 0.88
+flame3    n= 141  M0: median|res| 0.53, within 1 decade 0.76   M2: median|res| 0.22, within 1 decade 0.97
+ghost     n= 155  M0: median|res| 0.55, within 1 decade 0.70   M2: median|res| 0.40, within 1 decade 0.79
+logistic  n= 150  M0: median|res| 0.49, within 1 decade 0.85   M2: median|res| 0.34, within 1 decade 0.89
+all       n= 943  M0: median|res| 0.57, within 1 decade 0.72   M2: median|res| 0.26, within 1 decade 0.88

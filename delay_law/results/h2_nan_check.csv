@@ -1,0 +1,60 @@
+source,method,rtol,atol,steps,ignited,rhs_calls,nan_returns,error,steps_match_saved
+stage2 ratio=1e-02,RK45,0.0001,1.0000000000000002e-06,459,True,3188,4,,True
+stage2 ratio=1e-02,RK45,1e-06,1e-08,501,True,3506,3,,True
+stage2 ratio=1e-02,LSODA,0.0001,1.0000000000000002e-06,29,False,104,0,,True
+stage2 ratio=1e-02,LSODA,1e-06,1e-08,174,True,559,0,,True
+stage2 ratio=1e-02,LSODA,1e-08,1e-10,250,True,565,0,,True
+stage2 ratio=1e-02,BDF,0.0001,1.0000000000000002e-06,4,False,22,0,,True
+stage2 ratio=1e-02,BDF,1e-06,1e-08,9,False,32,0,,True
+stage2 ratio=1e-02,BDF,1e-08,1e-10,182,True,648,0,,True
+stage2 ratio=1e-02,Radau,0.0001,1.0000000000000002e-06,1,False,21,0,,True
+stage2 ratio=1e-02,Radau,1e-06,1e-08,1,False,21,0,,True
+stage2 ratio=1e-02,Radau,1e-08,1e-10,185,True,1708,0,,True
+stage2 ratio=1e-06,RK45,0.0001,1e-10,505,True,3458,3,,True
+stage2 ratio=1e-06,RK45,1e-06,1e-12,583,True,3746,3,,True
+stage2 ratio=1e-06,LSODA,0.0001,1e-10,143,True,468,0,,True
+stage2 ratio=1e-06,LSODA,1e-06,1e-12,264,True,710,0,,True
+stage2 ratio=1e-06,LSODA,1e-08,1e-14,480,True,1070,0,,True
+stage2 ratio=1e-06,BDF,0.0001,1e-10,71,True,398,0,,True
+stage2 ratio=1e-06,BDF,1e-06,1e-12,166,True,575,0,,True
+stage2 ratio=1e-06,BDF,1e-08,1e-14,394,True,1112,0,,True
+stage2 ratio=1e-06,Radau,0.0001,1e-10,52,True,774,0,,True
+stage2 ratio=1e-06,Radau,1e-06,1e-12,151,True,1543,0,,True
+stage2 ratio=1e-06,Radau,1e-08,1e-14,478,True,4045,0,,True
+stage2 ratio=1e-10,RK45,0.0001,1.0000000000000002e-14,507,True,3386,0,,True
+stage2 ratio=1e-10,RK45,1e-06,1e-16,624,True,3866,0,,True
+stage2 ratio=1e-10,LSODA,0.0001,1.0000000000000002e-14,196,True,571,0,,True
+stage2 ratio=1e-10,LSODA,1e-06,1e-16,334,True,779,0,,True
+stage2 ratio=1e-10,LSODA,1e-08,1e-18,554,True,1069,0,,True
+stage2 ratio=1e-10,BDF,0.0001,1.0000000000000002e-14,99,True,385,0,,True
+stage2 ratio=1e-10,BDF,1e-06,1e-16,236,True,718,0,,True
+stage2 ratio=1e-10,BDF,1e-08,1e-18,535,True,1500,0,,True
+stage2 ratio=1e-10,Radau,0.0001,1.0000000000000002e-14,66,True,844,0,,True
+stage2 ratio=1e-10,Radau,1e-06,1e-16,219,True,2041,0,,True
+stage2 ratio=1e-10,Radau,1e-08,1e-18,680,True,5631,0,,True
+stage2 defaults,RK45,0.001,1e-06,459,True,3152,4,,True
+stage2 defaults,LSODA,0.001,1e-06,29,False,106,0,,True
+stage2 defaults,BDF,0.001,1e-06,4,False,22,0,,True
+stage2 defaults,Radau,0.001,1e-06,1,False,21,0,,True
+stage2 orbit test,BDF,0.0001,1.0000000000000002e-06,3,False,20,0,,
+stage2 orbit test,BDF,1e-05,1.0000000000000001e-07,8,False,30,0,,
+stage2 orbit test,BDF,1e-06,1e-08,7,False,28,0,,
+stage2 orbit test,BDF,1e-07,1e-09,283,True,1144,0,,
+stage2 orbit test,BDF,1e-08,1e-10,415,True,1510,0,,
+stage2 orbit test,BDF,1e-09,1.0000000000000001e-11,605,True,2030,0,,
+stage2 orbit test,LSODA,0.0001,1.0000000000000002e-06,29,False,104,0,,
+stage2 orbit test,LSODA,1e-05,1.0000000000000001e-07,31,False,117,0,,
+stage2 orbit test,LSODA,1e-06,1e-08,371,True,1334,0,,
+stage2 orbit test,LSODA,1e-07,1e-09,514,True,1617,0,,
+stage2 orbit test,LSODA,1e-08,1e-10,658,True,1836,0,,
+stage2 orbit test,LSODA,1e-09,1.0000000000000001e-11,846,True,2134,0,,
+"review defaults, t_end=1 s",LSODA,0.001,1e-06,36,False,171,0,,True
+"review defaults, t_end=1 s",BDF,0.001,1e-06,10,False,34,0,,True
+"review defaults, t_end=1 s",Radau,0.001,1e-06,5,False,97,0,,True
+"review defaults, t_end=1 s",RK45,0.001,1e-06,459,True,3230,11,,True
+"review rtol 1e-4, scalar atol",LSODA,0.0001,1e-06,29,False,104,0,,True
+"review rtol 1e-4, species atol",LSODA,0.0001,componentwise,196,True,571,0,,True
+"review rtol 1e-4, scalar atol",BDF,0.0001,1e-06,4,False,22,0,,True
+"review rtol 1e-4, species atol",BDF,0.0001,componentwise,99,True,385,0,,True
+"review rtol 1e-4, scalar atol",Radau,0.0001,1e-06,1,False,21,0,,True
+"review rtol 1e-4, species atol",Radau,0.0001,componentwise,66,True,844,0,,True

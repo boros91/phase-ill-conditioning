@@ -1,0 +1,61 @@
+runs 59; runs with NaN returns 6; total NaN returns 28 of 69747 right-hand-side calls; step counts compared 47, equal 47
+
+stage2 ratio=1e-02               RK45   rtol=1e-04 atol=1.0000000000000002e-06 steps=   459 ignited=True  rhs=   3188 NaN=   4 saved-steps-match=True 
+stage2 ratio=1e-02               RK45   rtol=1e-06 atol=        1e-08 steps=   501 ignited=True  rhs=   3506 NaN=   3 saved-steps-match=True 
+stage2 ratio=1e-02               LSODA  rtol=1e-04 atol=1.0000000000000002e-06 steps=    29 ignited=False rhs=    104 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-02               LSODA  rtol=1e-06 atol=        1e-08 steps=   174 ignited=True  rhs=    559 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-02               LSODA  rtol=1e-08 atol=        1e-10 steps=   250 ignited=True  rhs=    565 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-02               BDF    rtol=1e-04 atol=1.0000000000000002e-06 steps=     4 ignited=False rhs=     22 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-02               BDF    rtol=1e-06 atol=        1e-08 steps=     9 ignited=False rhs=     32 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-02               BDF    rtol=1e-08 atol=        1e-10 steps=   182 ignited=True  rhs=    648 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-02               Radau  rtol=1e-04 atol=1.0000000000000002e-06 steps=     1 ignited=False rhs=     21 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-02               Radau  rtol=1e-06 atol=        1e-08 steps=     1 ignited=False rhs=     21 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-02               Radau  rtol=1e-08 atol=        1e-10 steps=   185 ignited=True  rhs=   1708 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-06               RK45   rtol=1e-04 atol=        1e-10 steps=   505 ignited=True  rhs=   3458 NaN=   3 saved-steps-match=True 
+stage2 ratio=1e-06               RK45   rtol=1e-06 atol=        1e-12 steps=   583 ignited=True  rhs=   3746 NaN=   3 saved-steps-match=True 
+stage2 ratio=1e-06               LSODA  rtol=1e-04 atol=        1e-10 steps=   143 ignited=True  rhs=    468 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-06               LSODA  rtol=1e-06 atol=        1e-12 steps=   264 ignited=True  rhs=    710 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-06               LSODA  rtol=1e-08 atol=        1e-14 steps=   480 ignited=True  rhs=   1070 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-06               BDF    rtol=1e-04 atol=        1e-10 steps=    71 ignited=True  rhs=    398 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-06               BDF    rtol=1e-06 atol=        1e-12 steps=   166 ignited=True  rhs=    575 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-06               BDF    rtol=1e-08 atol=        1e-14 steps=   394 ignited=True  rhs=   1112 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-06               Radau  rtol=1e-04 atol=        1e-10 steps=    52 ignited=True  rhs=    774 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-06               Radau  rtol=1e-06 atol=        1e-12 steps=   151 ignited=True  rhs=   1543 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-06               Radau  rtol=1e-08 atol=        1e-14 steps=   478 ignited=True  rhs=   4045 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-10               RK45   rtol=1e-04 atol=1.0000000000000002e-14 steps=   507 ignited=True  rhs=   3386 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-10               RK45   rtol=1e-06 atol=        1e-16 steps=   624 ignited=True  rhs=   3866 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-10               LSODA  rtol=1e-04 atol=1.0000000000000002e-14 steps=   196 ignited=True  rhs=    571 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-10               LSODA  rtol=1e-06 atol=        1e-16 steps=   334 ignited=True  rhs=    779 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-10               LSODA  rtol=1e-08 atol=        1e-18 steps=   554 ignited=True  rhs=   1069 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-10               BDF    rtol=1e-04 atol=1.0000000000000002e-14 steps=    99 ignited=True  rhs=    385 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-10               BDF    rtol=1e-06 atol=        1e-16 steps=   236 ignited=True  rhs=    718 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-10               BDF    rtol=1e-08 atol=        1e-18 steps=   535 ignited=True  rhs=   1500 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-10               Radau  rtol=1e-04 atol=1.0000000000000002e-14 steps=    66 ignited=True  rhs=    844 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-10               Radau  rtol=1e-06 atol=        1e-16 steps=   219 ignited=True  rhs=   2041 NaN=   0 saved-steps-match=True 
+stage2 ratio=1e-10               Radau  rtol=1e-08 atol=        1e-18 steps=   680 ignited=True  rhs=   5631 NaN=   0 saved-steps-match=True 
+stage2 defaults                  RK45   rtol=1e-03 atol=        1e-06 steps=   459 ignited=True  rhs=   3152 NaN=   4 saved-steps-match=True 
+stage2 defaults                  LSODA  rtol=1e-03 atol=        1e-06 steps=    29 ignited=False rhs=    106 NaN=   0 saved-steps-match=True 
+stage2 defaults                  BDF    rtol=1e-03 atol=        1e-06 steps=     4 ignited=False rhs=     22 NaN=   0 saved-steps-match=True 
+stage2 defaults                  Radau  rtol=1e-03 atol=        1e-06 steps=     1 ignited=False rhs=     21 NaN=   0 saved-steps-match=True 
+stage2 orbit test                BDF    rtol=1e-04 atol=1.0000000000000002e-06 steps=     3 ignited=False rhs=     20 NaN=   0 saved-steps-match=None 
+stage2 orbit test                BDF    rtol=1e-05 atol=1.0000000000000001e-07 steps=     8 ignited=False rhs=     30 NaN=   0 saved-steps-match=None 
+stage2 orbit test                BDF    rtol=1e-06 atol=        1e-08 steps=     7 ignited=False rhs=     28 NaN=   0 saved-steps-match=None 
+stage2 orbit test                BDF    rtol=1e-07 atol=        1e-09 steps=   283 ignited=True  rhs=   1144 NaN=   0 saved-steps-match=None 
+stage2 orbit test                BDF    rtol=1e-08 atol=        1e-10 steps=   415 ignited=True  rhs=   1510 NaN=   0 saved-steps-match=None 
+stage2 orbit test                BDF    rtol=1e-09 atol=1.0000000000000001e-11 steps=   605 ignited=True  rhs=   2030 NaN=   0 saved-steps-match=None 
+stage2 orbit test                LSODA  rtol=1e-04 atol=1.0000000000000002e-06 steps=    29 ignited=False rhs=    104 NaN=   0 saved-steps-match=None 
+stage2 orbit test                LSODA  rtol=1e-05 atol=1.0000000000000001e-07 steps=    31 ignited=False rhs=    117 NaN=   0 saved-steps-match=None 
+stage2 orbit test                LSODA  rtol=1e-06 atol=        1e-08 steps=   371 ignited=True  rhs=   1334 NaN=   0 saved-steps-match=None 
+stage2 orbit test                LSODA  rtol=1e-07 atol=        1e-09 steps=   514 ignited=True  rhs=   1617 NaN=   0 saved-steps-match=None 
+stage2 orbit test                LSODA  rtol=1e-08 atol=        1e-10 steps=   658 ignited=True  rhs=   1836 NaN=   0 saved-steps-match=None 
+stage2 orbit test                LSODA  rtol=1e-09 atol=1.0000000000000001e-11 steps=   846 ignited=True  rhs=   2134 NaN=   0 saved-steps-match=None 
+review defaults, t_end=1 s       LSODA  rtol=1e-03 atol=        1e-06 steps=    36 ignited=False rhs=    171 NaN=   0 saved-steps-match=True 
+review defaults, t_end=1 s       BDF    rtol=1e-03 atol=        1e-06 steps=    10 ignited=False rhs=     34 NaN=   0 saved-steps-match=True 
+review defaults, t_end=1 s       Radau  rtol=1e-03 atol=        1e-06 steps=     5 ignited=False rhs=     97 NaN=   0 saved-steps-match=True 
+review defaults, t_end=1 s       RK45   rtol=1e-03 atol=        1e-06 steps=   459 ignited=True  rhs=   3230 NaN=  11 saved-steps-match=True 
+review rtol 1e-4, scalar atol    LSODA  rtol=1e-04 atol=        1e-06 steps=    29 ignited=False rhs=    104 NaN=   0 saved-steps-match=True 
+review rtol 1e-4, species atol   LSODA  rtol=1e-04 atol=componentwise steps=   196 ignited=True  rhs=    571 NaN=   0 saved-steps-match=True 
+review rtol 1e-4, scalar atol    BDF    rtol=1e-04 atol=        1e-06 steps=     4 ignited=False rhs=     22 NaN=   0 saved-steps-match=True 
+review rtol 1e-4, species atol   BDF    rtol=1e-04 atol=componentwise steps=    99 ignited=True  rhs=    385 NaN=   0 saved-steps-match=True 
+review rtol 1e-4, scalar atol    Radau  rtol=1e-04 atol=        1e-06 steps=     1 ignited=False rhs=     21 NaN=   0 saved-steps-match=True 
+review rtol 1e-4, species atol   Radau  rtol=1e-04 atol=componentwise steps=    66 ignited=True  rhs=    844 NaN=   0 saved-steps-match=True 

@@ -1,0 +1,20 @@
+\begin{tabular}{lcccccc}
+\toprule
+& \multicolumn{2}{c}{$\AbsTol/\RelTol=10^{-2}$} & \multicolumn{2}{c}{$10^{-6}$} & \multicolumn{2}{c}{$10^{-10}$}\\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+& \multicolumn{2}{c}{$\Pi=3.8\cdot10^{8}$} & \multicolumn{2}{c}{$\Pi=3.8\cdot10^{4}$} & \multicolumn{2}{c}{$\Pi=383$}\\
+solver, $\RelTol$ & $D/t_e$ & steps & $D/t_e$ & steps & $D/t_e$ & steps\\
+\midrule
+RK45 $10^{-4}$ & $-0.077$ & 459 & $-6.1\cdot10^{-9}$ & 505 & $2.1\cdot10^{-9}$ & 507 \\
+RK45 $10^{-6}$ & $-2.9\cdot10^{-5}$ & 501 & $-5.0\cdot10^{-11}$ & 583 & $-4.9\cdot10^{-11}$ & 624 \\
+LSODA $10^{-4}$ & no ignition & 29 & $-5.0\cdot10^{-3}$ & 143 & $-1.1\cdot10^{-4}$ & 196 \\
+LSODA $10^{-6}$ & $-0.05$ & 174 & $-7.5\cdot10^{-5}$ & 264 & $-2.4\cdot10^{-6}$ & 334 \\
+LSODA $10^{-8}$ & $-4.3\cdot10^{-3}$ & 250 & $-1.5\cdot10^{-6}$ & 480 & $-5.3\cdot10^{-8}$ & 554 \\
+BDF $10^{-4}$ & no ignition & 4 & $-0.014$ & 71 & $-2.1\cdot10^{-4}$ & 99 \\
+BDF $10^{-6}$ & no ignition & 9 & $-1.7\cdot10^{-4}$ & 166 & $-3.5\cdot10^{-6}$ & 236 \\
+BDF $10^{-8}$ & $-0.013$ & 182 & $-2.0\cdot10^{-6}$ & 394 & $-6.2\cdot10^{-8}$ & 535 \\
+Radau $10^{-4}$ & no ignition & 1 & $-1.1\cdot10^{-5}$ & 52 & $-6.4\cdot10^{-7}$ & 66 \\
+Radau $10^{-6}$ & no ignition & 1 & $-4.0\cdot10^{-7}$ & 151 & $-1.2\cdot10^{-9}$ & 219 \\
+Radau $10^{-8}$ & $-9.1\cdot10^{-6}$ & 185 & $-1.1\cdot10^{-9}$ & 478 & $2.2\cdot10^{-12}$ & 680 \\
+\bottomrule
+\end{tabular}

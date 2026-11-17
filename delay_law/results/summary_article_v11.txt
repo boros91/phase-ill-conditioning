@@ -1,0 +1,4 @@
+Numbers added in article v11
+
+logistic x0=1e-7 BDF tol=1e-4 atol=1e-6: status finished, steps 29, t=1.000e+12, x=-2.899e-83
+SIR I0=1e-08 BDF tol=1e-04: steps 7, t_end=1934 = 20.15 T_e, min I=-1.939e-08

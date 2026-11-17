@@ -1,0 +1,45 @@
+Numbers added in article v6
+
+ideal controller Euler tol=1e-08: measured/pred 1.0000..1.0019 (n=12)
+ideal controller Euler tol=1e-06: measured/pred 0.9998..1.0182 (n=12)
+ideal controller Euler tol=1e-04: measured/pred 0.9973..1.1420 (n=12)
+ideal controller HeunEx tol=1e-08: measured/pred 0.9927..1.0040 (n=12)
+ideal controller HeunEx tol=1e-06: measured/pred 0.9341..1.0392 (n=12)
+ideal controller HeunEx tol=1e-04: measured/pred 0.5750..1.2393 (n=12)
+
+LOFO flame2: n=497 M0 median|res| 0.60 in1dec 0.67; M2 median|res| 0.26 in1dec 0.88
+LOFO flame3: n=141 M0 median|res| 0.53 in1dec 0.76; M2 median|res| 0.22 in1dec 0.97
+LOFO ghost: n=155 M0 median|res| 0.55 in1dec 0.70; M2 median|res| 0.40 in1dec 0.79
+LOFO logistic: n=150 M0 median|res| 0.49 in1dec 0.85; M2 median|res| 0.34 in1dec 0.89
+LOFO all: n=943 M0 median|res| 0.57 in1dec 0.72; M2 median|res| 0.26 in1dec 0.88
+
+events ml: n=30 end/root median 9.66e-04 within1% 0.80 max 8.89e+00; hat/end median 3.26e-04 q90 2.34e-02 max 4.42e-02; sign agree 1.00; |D|/A median 0.58 q10 0.13 q90 0.92
+   BDF: |D|/A median 0.44
+   DOP853: |D|/A median 0.79
+   LSODA: |D|/A median 0.64
+   RK45: |D|/A median 0.89
+   Radau: |D|/A median 0.19
+   largest end/root difference: RK45 tol=1e-04 par=1e-01: D_end=-3.127e-04 D_root=-3.162e-05
+events sir: n=59 end/root median 9.13e-04 within1% 0.64 max 2.98e+00; hat/end median 4.27e-03 q90 1.57e-01 max 1.39e+00; sign agree 0.98; |D|/A median 0.91 q10 0.14 q90 1.00
+   BDF: |D|/A median 0.85
+   DOP853: |D|/A median 1.00
+   LSODA: |D|/A median 0.81
+   RK45: |D|/A median 0.91
+   Radau: |D|/A median 0.97
+   largest end/root difference: RK45 tol=1e-08 par=1e-02: D_end=-8.290e-08 D_root=+4.190e-08
+law vs sums ml: n=30 median log10(A/pred) -0.17, median log10(|D|/pred) -0.70
+law vs sums sir: n=58 median log10(A/pred) +0.21, median log10(|D|/pred) +0.11
+
+H2 defaults, t_end=1 s LSODA: ignited=False D/t_e=+nan steps=36 t_final=1.000e+00 T_final=999.51 minY=-5.510e-05
+H2 defaults, t_end=1 s BDF: ignited=False D/t_e=+nan steps=10 t_final=1.000e+00 T_final=999.51 minY=-5.513e-05
+H2 defaults, t_end=1 s Radau: ignited=False D/t_e=+nan steps=5 t_final=1.000e+00 T_final=999.51 minY=-5.526e-05
+H2 defaults, t_end=1 s RK45: ignited=True D/t_e=-7.903e-02 steps=459 t_final=2.866e-04 T_final=1401.11 minY=0.000e+00
+H2 rtol 1e-4, scalar atol LSODA: ignited=False D/t_e=+nan steps=29 t_final=1.000e-03 T_final=1000.00 minY=-7.763e-08
+H2 rtol 1e-4, species atol LSODA: ignited=True D/t_e=-1.054e-04 steps=196 t_final=3.111e-04 T_final=1402.54 minY=0.000e+00
+H2 rtol 1e-4, scalar atol BDF: ignited=False D/t_e=+nan steps=4 t_final=1.000e-03 T_final=1000.00 minY=-7.817e-08
+H2 rtol 1e-4, species atol BDF: ignited=True D/t_e=-2.135e-04 steps=99 t_final=3.112e-04 T_final=1408.56 minY=0.000e+00
+H2 rtol 1e-4, scalar atol Radau: ignited=False D/t_e=+nan steps=1 t_final=1.000e-03 T_final=1000.00 minY=-8.038e-08
+H2 rtol 1e-4, species atol Radau: ignited=True D/t_e=-6.382e-07 steps=66 t_final=3.116e-04 T_final=1435.41 minY=0.000e+00
+H2 Cantera defaults ReactorNet: ignited=True D/t_e=-1.107e-06 steps=508 t_final=3.111e-04 T_final=1400.09 minY=0.000e+00
+H2 Cantera rtol 1e-4 ReactorNet: ignited=False D/t_e=+nan steps=2 t_final=2.611e-03 T_final=1000.00 minY=-1.711e-07
+H2 Cantera rtol 1e-3 ReactorNet: ignited=False D/t_e=+nan steps=2 t_final=2.616e-03 T_final=1000.00 minY=-1.714e-07

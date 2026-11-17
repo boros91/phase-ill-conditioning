@@ -1,0 +1,8 @@
+# Python environment in which the table and figure scripts were checked (Python 3.13)
+numpy==2.5.3
+scipy==1.18.1
+pandas==3.0.5
+matplotlib==3.11.2
+phasecond @ git+https://github.com/boros91/phasecond@v0.1.0
+# the hydrogen-air scripts additionally need Cantera 3.2.0 (pip install cantera==3.2.0);
+# the MATLAB scripts need MATLAB R2023b (no toolboxes)

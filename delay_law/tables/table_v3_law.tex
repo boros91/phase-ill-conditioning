@@ -1,0 +1,24 @@
+\begin{tabular}{llrccccc}
+\toprule
+& & & \multicolumn{2}{c}{exponent $\alpha$} & \multicolumn{3}{c}{spread of $\log_{10}$ residuals}\\
+\cmidrule(lr){4-5}\cmidrule(lr){6-8}
+& solver & runs & fitted & $q/(\hat p+1)$ & $c\,\tol\,\Pi$ & $K\tol^\alpha\Pi$ & $K\tol^\alpha\Lambda_\alpha$\\
+\midrule
+SciPy & \code{BDF} & 47 & 0.90 & $\le 5/6$ & 0.41 & 0.36 & 0.27\\
+ & \code{LSODA} & 48 & 0.85 & $\le 5/6$ & 0.54 & 0.46 & 0.37\\
+ & \code{RK45} & 48 & 0.75 & 1 & 1.09 & 1.05 & 0.77\\
+ & \code{DOP853} & 48 & 0.85 & 1 & 0.80 & 0.78 & 0.73\\
+ & \code{Radau} & 45 & 1.05 & 5/4 & 0.75 & 0.70 & 0.70\\
+MATLAB & \code{ode15s BDF} & 56 & 0.85 & $\le 5/6$ & 0.68 & 0.39 & 0.36\\
+ & \code{ode15s} & 116 & 0.85 & $\le 5/6$ & 0.71 & 0.44 & 0.30\\
+ & \code{ode23t} & 109 & 0.65 & 2/3 & 1.24 & 0.58 & 0.19\\
+ & \code{ode23tb} & 57 & 0.65 & 2/3 & 1.35 & 0.65 & 0.29\\
+ & \code{ode23s} & 117 & 0.60 & 2/3 & 1.54 & 0.80 & 0.46\\
+ & \code{ode113} & 48 & 0.95 & $\le 13/14$ & 0.49 & 0.45 & 0.29\\
+ & \code{ode23} & 104 & 0.95 & 1 & 0.60 & 0.57 & 0.64\\
+ & \code{ode45} & 100 & 0.90 & 1 & 1.28 & 1.27 & 1.14\\
+\midrule
+SciPy, weighted mean & & 236 & & & 0.72 & 0.67 & 0.57\\
+MATLAB, weighted mean & & 707 & & & 1.03 & 0.67 & 0.48\\
+\bottomrule
+\end{tabular}
