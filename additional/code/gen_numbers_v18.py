@@ -1,6 +1,6 @@
-"""Numbers added in version 18 of the paper (after the final review of v17).
-(1) Pooled threshold counts over the 1215-run suite (Sects. 7.2 and 12): the 236 SciPy scalar runs
-    and 59 SIR runs, 539 completed MATLAB flame runs, 40 first-set MATLAB SIR runs and 336 second-set
+"""Further numbers quoted in the paper.
+(1) Pooled threshold counts over the 1215-run suite (Sects. 7.2 and 12): the 240 SciPy scalar runs
+    and 60 SIR runs, 539 completed MATLAB flame runs, 40 first-set MATLAB SIR runs and 336 second-set
     MATLAB runs, in the bands rtol*Pi < 1e-3, 1e-3 <= rtol*Pi < 1, rtol*Pi >= 1; and how each run
     without a recorded crossing ended (clean completion, stopping rule, solver failure).
 (2) Held-out scalar families (Sect. 7.4): the fixed-power model c r Pi, a two-parameter power model
@@ -16,7 +16,7 @@ import pandas as pd
 
 E = '../../experiments/results/'
 L = '../../delay_law/results/'
-out = ['Numbers added in version 18', '']
+out = ['Further numbers quoted in the paper (gen_numbers_v18.py)', '']
 
 # ---------------------------------------------------------------- (1) pooled bands
 frames = []

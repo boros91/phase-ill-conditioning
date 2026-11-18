@@ -1,4 +1,4 @@
-Numbers added in version 18
+Further numbers quoted in the paper (gen_numbers_v18.py)
 
 pooled runs: 1215 (index_scalar 240, sir_runs 60, matlab_pi_flame 539, matlab_pi_sir 40, matlab_phase_index 336)
   band low: runs 599, recorded crossings 599, no crossing 0; eta median 7.452e-06, max 0.04116
