@@ -1,0 +1,37 @@
+Numbers added in version 18
+
+pooled runs: 1215 (index_scalar 240, sir_runs 60, matlab_pi_flame 539, matlab_pi_sir 40, matlab_phase_index 336)
+  band low: runs 599, recorded crossings 599, no crossing 0; eta median 7.452e-06, max 0.04116
+  band mid: runs 366, recorded crossings 366, no crossing 0; eta median 0.02028, max 18.44
+  band high: runs 250, recorded crossings 234, no crossing 16; eta median 16.68, max 1.095e+08
+  high band: crossings with eta < 1: 61, with eta < 0.1: 24 (of 234)
+runs without a recorded crossing: 16
+   SciPy scalar | logistic_x1e-07 | BDF | clean completion (solver reached t = 1e12 without a crossing)
+   SciPy SIR | I0=1e-08 | BDF | stopping rule (first step past t = 10 T_e)
+   MATLAB second set | logistic 1e-07 | ode15s | clean completion
+   MATLAB second set | logistic 1e-07 | ode15s_BDF | clean completion
+   MATLAB second set | logistic 1e-07 | ode23t | solver failure: Failure at t=9.589308e+01.  Unable to meet integration toler
+   MATLAB second set | sir 1e-08 | ode23s | clean completion
+   MATLAB second set | sir 1e-08 | ode15s | clean completion
+   MATLAB second set | sir 1e-08 | ode15s_BDF | clean completion
+   MATLAB second set | sir 1e-08 | ode23t | clean completion
+   MATLAB second set | sir 1e-08 | ode23tb | clean completion
+   MATLAB first set SIR | I0=1e-07 std | ode15s | clean completion
+   MATLAB first set SIR | I0=1e-07 def | ode15s | clean completion
+   MATLAB first set SIR | I0=1e-09 std | ode23t | clean completion
+   MATLAB first set SIR | I0=1e-09 std | ode15s | clean completion
+   MATLAB first set SIR | I0=1e-09 def | ode23t | clean completion
+   MATLAB first set SIR | I0=1e-09 def | ode15s | clean completion
+   summary: clean completion 14, stopping rule 1, solver failure 1
+
+held-out scalar families (leave one family out):
+  c r Pi (one fitted parameter; archived residuals reproduced): 678/943 = 71.9% within a factor 10; median |log10 residual| 0.566 (factor 3.68)
+  K r^alpha Pi (two fitted parameters, least-squares slope): 799/943 = 84.7% within a factor 10; median |log10 residual| 0.406 (factor 2.55)
+  K r^alpha Pi (two fitted parameters, slope on the grid of the integrated law): 797/943 = 84.5% within a factor 10; median |log10 residual| 0.413 (factor 2.59)
+  K r^alpha Lambda_alpha (archived): 831/943 = 88.1% within a factor 10; median |log10 residual| 0.262 (factor 1.83)
+
+systems out of sample (scalar-trained models):
+  one-step model, all runs: 158/249 = 63.5% within a factor 10; median |log10 residual| 0.733 (factor 5.41)
+  integrated law, all runs: 193/249 = 77.5% within a factor 10; median |log10 residual| 0.477 (factor 3.00)
+  one-step model, SciPy Morris-Lecar: 27/45 = 60.0% within a factor 10; median |log10 residual| 0.683 (factor 4.81)
+  integrated law, SciPy Morris-Lecar: 25/45 = 55.6% within a factor 10; median |log10 residual| 0.763 (factor 5.80)

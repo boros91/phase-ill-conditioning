@@ -19,7 +19,7 @@ It tests these quantities on thirteen SciPy and MATLAB integrators, four fixed-s
 - every figure and table of the paper and of its supplementary materials (SM);
 - the numbers quoted in the text.
 
-**The detector.** The detection algorithm is a separate package, [phasecond](https://github.com/boros91/phasecond). The scripts here use phasecond version 0.1.0 (https://doi.org/10.5281/zenodo.24321465).
+**The detector.** The detection algorithm is a separate package, [phasecond](https://github.com/boros91/phasecond). The scripts here use phasecond version 0.1.1 (release 1.0.0 of this repository used 0.1.0, https://doi.org/10.5281/zenodo.24321465).
 
 **The companion paper.** The flame problem y' = y^q (1 - y) is treated in depth in the companion paper *Right shape, wrong time: phase errors of ODE solvers in the flame problem* ([arXiv:2611.23027](https://arxiv.org/abs/2611.23027)). Its code is in [flame-phase-errors](https://github.com/boros91/flame-phase-errors), archived at https://doi.org/10.5281/zenodo.24314322. Some MATLAB runs of that paper are reused here; copies are included so that every script runs from this repository alone.
 
@@ -29,15 +29,15 @@ It tests these quantities on thirteen SciPy and MATLAB integrators, four fixed-s
 |---|---|
 | `experiments/` | The main runs: Pi against measured delays (scalar problems, SIR), Pi in different unknowns, orbit test, hydrogen-air ignition, Morris-Lecar near its SNIC bifurcation, fixed-step methods, and the evaluation of the MATLAB runs. MATLAB scripts are in `experiments/matlab/`; their output is in `experiments/results/matlab/`. |
 | `delay_law/` | The integrated law: fit, growth along families, held-out families, systems out of sample, the idealized controller, event-error definitions, hydrogen-air checks, the Morris-Lecar error decomposition and time-control cost, and the figures of Sects. 4 and 7 and Fig. SM1. |
-| `companion_runs/` | SIR with one infected person in N, the May-Leonard cycle and the theta neuron. These are MATLAB runs of the companion paper and their analysis (Table SM14, Fig. SM2). |
-| `additional/` | Fig. 1.1, the run accounting (Table SM2), the indicators of the theta neuron and the May-Leonard cycle computed with phasecond (Table SM15), and the phase space error controls of Higham-Humphries-Wain and Humphries-Vigneswaran on the test problems (Table SM16). |
+| `companion_runs/` | SIR with one infected person in N, the May-Leonard cycle and the theta neuron. These are MATLAB runs of the companion paper and their analysis (Table SM15, Fig. SM2). |
+| `additional/` | Fig. 1.1, the run accounting (Table SM2), the indicators of the theta neuron and the May-Leonard cycle computed with phasecond (Table SM16), the numbers added in version 18 of the paper (pooled threshold counts, held-out comparison with a two-parameter baseline, Table SM9), and the phase space error controls of Higham-Humphries-Wain and Humphries-Vigneswaran on the test problems (Table SM17). |
 | `paper/` | The figures (PDF) and LaTeX table bodies exactly as included by the manuscript. |
 
 Each of the first four folders has `code/` and `results/`, and, where it makes them, `tables/` and `figs/`.
 
 ## Software
 
-- Python 3.13 with the packages in `requirements.txt`: NumPy 2.5, SciPy 1.18.1, pandas 3.0, Matplotlib 3.11, phasecond 0.1.0.
+- Python 3.13 with the packages in `requirements.txt`: NumPy 2.5, SciPy 1.18.1, pandas 3.0, Matplotlib 3.11, phasecond 0.1.1.
 - Cantera 3.2.0, only for the hydrogen-air experiments: `experiments/code/exp_h2_ignition.py`, `delay_law/code/exp_h2_review.py` and `delay_law/code/exp_h2_nan_check.py`.
 - MATLAB R2023b Update 3, no toolboxes needed.
 
@@ -70,7 +70,7 @@ python gen_tables_article_v6.py          # for example
    - `exp_ideal_controller.py`, `exp_delay_law_lofo.py`, `exp_event_error_check.py` and `exp_h2_review.py`, then `gen_tables_article_v6.py`;
    - `gen_numbers_v7.py`, `exp_h2_nan_check.py`, `gen_numbers_v8.py`, `gen_tables_v10.py`, `gen_tables_v11.py`, `gen_numbers_v11.py` and `make_figs_v11.py`.
 3. `companion_runs/code`: `exp_other_problems.py`, then `make_fig12_other.py`.
-4. `additional/code`: `make_fig_v12_phenomenon.py`, `gen_accounting_v12.py`, `exp_v12_other.py`, `exp_v16_pscontrol.py` and `gen_table_v16.py`.
+4. `additional/code`: `make_fig_v12_phenomenon.py`, `gen_accounting_v12.py`, `exp_v12_other.py`, `exp_v16_pscontrol.py`, `gen_table_v16.py` and `gen_numbers_v18.py`.
 
 **Approximate running times.** The orbit test and the Morris-Lecar runs take about five minutes each, the hydrogen-air runs about two minutes, and `exp_v16_pscontrol.py` about 20 s. The table and figure scripts take seconds.
 
@@ -78,7 +78,7 @@ python gen_tables_article_v6.py          # for example
 
 ## Which script produces what
 
-The numbering of figures, tables and sections is that of the paper and its supplementary materials (SM).
+The numbering of figures, tables and sections is that of version 18 of the paper and its supplementary materials (SM); in version 17, Tables SM10-SM17 were SM9-SM16 and Table SM9 did not exist.
 
 ### Figures
 
@@ -109,14 +109,15 @@ The numbering of figures, tables and sections is that of the paper and its suppl
 | Table SM6 (orbit test) | `experiments/code/exp_orbit_test.py` -> `gen_summary_stage2.py` | `table_orbit.tex` |
 | Table SM7 (event-error definitions) | `delay_law/code/exp_event_error_check.py` -> `gen_tables_article_v6.py` | `table_v6_events.tex` |
 | Table SM8 (origin of the error scale) | `delay_law/code/exp_new_checks.py` -> `gen_tables_article_v3.py` | `table_v3_shift.tex` |
-| Table SM9 (fixed step) | `experiments/code/exp_fixed_step.py`, `exp_fixed_step_flame.py` -> `gen_tables_fixed.py` | `table_fixed.tex` |
-| Table SM10 (hydrogen-air, componentwise tolerances, Cantera) | `delay_law/code/exp_h2_review.py` -> `gen_tables_article_v6.py` | `table_v6_h2.tex` |
-| Table SM11 (Morris-Lecar delays) | `experiments/code/exp_morris_lecar.py` -> `gen_tables_v2.py` | `table_ml.tex` |
-| Table SM12 (detector against the stored values) | `examples/validate.py` of phasecond 0.1.0 | `table_detector.tex` |
-| Table SM13 (finite tolerances) | `examples/validate.py` of phasecond 0.1.0 | `table_finite.tex` |
-| Table SM14 (SIR with one infected in N) | `companion_runs/code/exp_other_problems.py` | `companion_runs/results/other_sir.csv` (values typed into the table) |
-| Table SM15 (May-Leonard indicators) | `additional/code/exp_v12_other.py` | `table_v12_mayleonard.tex` (numbers in `additional/results/v12_other.txt`) |
-| Table SM16 (phase space error control) | `additional/code/exp_v16_pscontrol.py` -> `gen_table_v16.py` | `table_v16_pscontrol.tex` (numbers in `additional/results/v16_numbers.txt`) |
+| Table SM9 (held-out scalar families, four models) | `additional/code/gen_numbers_v18.py` | `additional/results/summary_v18.txt` (values typed into the table) |
+| Table SM10 (fixed step) | `experiments/code/exp_fixed_step.py`, `exp_fixed_step_flame.py` -> `gen_tables_fixed.py` | `table_fixed.tex` |
+| Table SM11 (hydrogen-air, componentwise tolerances, Cantera) | `delay_law/code/exp_h2_review.py` -> `gen_tables_article_v6.py` | `table_v6_h2.tex` |
+| Table SM12 (Morris-Lecar delays) | `experiments/code/exp_morris_lecar.py` -> `gen_tables_v2.py` | `table_ml.tex` |
+| Table SM13 (detector against the stored values) | `examples/validate.py` of phasecond 0.1.1 (same values as 0.1.0) | `table_detector.tex` |
+| Table SM14 (finite tolerances) | `examples/validate.py` of phasecond 0.1.1 (same values as 0.1.0) | `table_finite.tex` |
+| Table SM15 (SIR with one infected in N) | `companion_runs/code/exp_other_problems.py` | `companion_runs/results/other_sir.csv` (values typed into the table) |
+| Table SM16 (May-Leonard indicators) | `additional/code/exp_v12_other.py` | `table_v12_mayleonard.tex` (numbers in `additional/results/v12_other.txt`) |
+| Table SM17 (phase space error control) | `additional/code/exp_v16_pscontrol.py` -> `gen_table_v16.py` | `table_v16_pscontrol.tex` (numbers in `additional/results/v16_numbers.txt`) |
 
 All table files are also in `paper/tables/`, as included by the manuscript.
 
@@ -130,7 +131,7 @@ The numbers quoted in the text are printed by the scripts above into these summa
 
 ## Citation
 
-If you use this code, please cite the paper and this repository (see `CITATION.cff`). Release v1.0.0, the version used in the paper, is archived on Zenodo: https://doi.org/10.5281/zenodo.24321535 (all versions: https://doi.org/10.5281/zenodo.24321534).
+If you use this code, please cite the paper and this repository (see `CITATION.cff`). All versions are archived on Zenodo: https://doi.org/10.5281/zenodo.24321534. Release v1.0.0 (version 17 of the paper): https://doi.org/10.5281/zenodo.24321535. Release v1.1.0 is used in version 18 of the paper; changes in `CHANGELOG.md`.
 
 ## License
 
