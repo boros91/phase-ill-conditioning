@@ -1,5 +1,7 @@
 # phase-ill-conditioning
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24321534.svg)](https://doi.org/10.5281/zenodo.24321534)
+
 This repository holds the code and data for the paper
 
 > Imre Boros, *Phase ill-conditioning of autonomous initial value problems: event times under local error control* (2026). The paper is a preprint; its arXiv link will be added here.
@@ -17,9 +19,9 @@ It tests these quantities on thirteen SciPy and MATLAB integrators, four fixed-s
 - every figure and table of the paper and of its supplementary materials (SM);
 - the numbers quoted in the text.
 
-**The detector.** The detection algorithm is a separate package, [phasecond](https://github.com/boros91/phasecond). The scripts here use phasecond version 0.1.0.
+**The detector.** The detection algorithm is a separate package, [phasecond](https://github.com/boros91/phasecond). The scripts here use phasecond version 0.1.0 (https://doi.org/10.5281/zenodo.24321465).
 
-**The companion paper.** The flame problem y' = y^q (1 - y) is treated in depth in the companion paper *Right shape, wrong time: phase errors of ODE solvers in the flame problem*. Its code is in [flame-phase-errors](https://github.com/boros91/flame-phase-errors), archived at https://doi.org/10.5281/zenodo.24314322. Some MATLAB runs of that paper are reused here; copies are included so that every script runs from this repository alone.
+**The companion paper.** The flame problem y' = y^q (1 - y) is treated in depth in the companion paper *Right shape, wrong time: phase errors of ODE solvers in the flame problem* ([arXiv:2611.23027](https://arxiv.org/abs/2611.23027)). Its code is in [flame-phase-errors](https://github.com/boros91/flame-phase-errors), archived at https://doi.org/10.5281/zenodo.24314322. Some MATLAB runs of that paper are reused here; copies are included so that every script runs from this repository alone.
 
 ## Contents
 
@@ -128,7 +130,7 @@ The numbers quoted in the text are printed by the scripts above into these summa
 
 ## Citation
 
-If you use this code, please cite the paper and this repository (see `CITATION.cff`).
+If you use this code, please cite the paper and this repository (see `CITATION.cff`). Release v1.0.0, the version used in the paper, is archived on Zenodo: https://doi.org/10.5281/zenodo.24321535 (all versions: https://doi.org/10.5281/zenodo.24321534).
 
 ## License
 
