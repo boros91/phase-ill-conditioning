@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.2 (2026-11-18)
+
+- Fig. 4.1 (`delay_law/code/make_figs_v11.py` -> `fig_v11_theta.pdf`): the curves are distinguished
+  by line style and markers as well as colour, for black-and-white print. Data unchanged.
+- README: which data come from the companion paper (its MATLAB flame runs) and which MATLAB system
+  trajectories are first analysed here (`companion_runs/`, the SIR runs of the first MATLAB set).
+
 ## 1.1.1 (2026-11-18)
 
 - phasecond 0.1.2 instead of 0.1.1 (`requirements.txt`): corrected statuses of the scalar late

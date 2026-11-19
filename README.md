@@ -21,7 +21,7 @@ It tests these quantities on thirteen SciPy and MATLAB integrators, four fixed-s
 
 **The detector.** The detection algorithm is a separate package, [phasecond](https://github.com/boros91/phasecond). The scripts here use phasecond version 0.1.2 (release 1.0.0 of this repository used 0.1.0, https://doi.org/10.5281/zenodo.24321465).
 
-**The companion paper.** The flame problem y' = y^q (1 - y) is treated in depth in the companion paper *Right shape, wrong time: phase errors of ODE solvers in the flame problem* ([arXiv:2611.23027](https://arxiv.org/abs/2611.23027)). Its code is in [flame-phase-errors](https://github.com/boros91/flame-phase-errors), archived at https://doi.org/10.5281/zenodo.24314322. Some MATLAB runs of that paper are reused here; copies are included so that every script runs from this repository alone.
+**The companion paper.** The flame problem y' = y^q (1 - y) is treated in depth in the companion paper *Right shape, wrong time: phase errors of ODE solvers in the flame problem* ([arXiv:2611.23027](https://arxiv.org/abs/2611.23027)). Its code is in [flame-phase-errors](https://github.com/boros91/flame-phase-errors), archived at https://doi.org/10.5281/zenodo.24314322. Its MATLAB flame runs are reused here; copies are included so that every script runs from this repository alone. The MATLAB runs for SIR with one infected person in N, the May-Leonard cycle and the theta neuron (`companion_runs/`, and the 40 SIR runs of the first MATLAB set) are not reported in that paper; they are analysed in this one.
 
 ## Contents
 
@@ -29,7 +29,7 @@ It tests these quantities on thirteen SciPy and MATLAB integrators, four fixed-s
 |---|---|
 | `experiments/` | The main runs: Pi against measured delays (scalar problems, SIR), Pi in different unknowns, orbit test, hydrogen-air ignition, Morris-Lecar near its SNIC bifurcation, fixed-step methods, and the evaluation of the MATLAB runs. MATLAB scripts are in `experiments/matlab/`; their output is in `experiments/results/matlab/`. |
 | `delay_law/` | The integrated law: fit, growth along families, held-out families, systems out of sample, the idealized controller, event-error definitions, hydrogen-air checks, the Morris-Lecar error decomposition and time-control cost, and the figures of Sects. 4 and 7 and Fig. SM1. |
-| `companion_runs/` | SIR with one infected person in N, the May-Leonard cycle and the theta neuron. These are MATLAB runs of the companion paper and their analysis (Table SM15, Fig. SM2). |
+| `companion_runs/` | SIR with one infected person in N, the May-Leonard cycle and the theta neuron. MATLAB system trajectories analysed in this paper, not reported in the companion paper, and their analysis (Table SM15, Fig. SM2). |
 | `additional/` | Fig. 1.1, the run accounting (Table SM2), the indicators of the theta neuron and the May-Leonard cycle computed with phasecond (Table SM16), further numbers quoted in the paper (pooled threshold counts, held-out comparison with a two-parameter baseline, Table SM9), and the phase space error controls of Higham-Humphries-Wain and Humphries-Vigneswaran on the test problems (Table SM17). |
 | `paper/` | The figures (PDF) and LaTeX table bodies exactly as included by the manuscript. |
 
@@ -131,7 +131,7 @@ The numbers quoted in the text are printed by the scripts above into these summa
 
 ## Citation
 
-If you use this code, please cite the paper and this repository (see `CITATION.cff`). All versions are archived on Zenodo: https://doi.org/10.5281/zenodo.24321534. The paper uses release v1.1.1; changes between releases are listed in `CHANGELOG.md`.
+If you use this code, please cite the paper and this repository (see `CITATION.cff`). All versions are archived on Zenodo: https://doi.org/10.5281/zenodo.24321534. The paper uses release v1.1.2; changes between releases are listed in `CHANGELOG.md`.
 
 ## License
 

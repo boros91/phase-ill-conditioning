@@ -25,20 +25,26 @@ R = '../results/'
 
 # ---------------- timing sensitivity along the orbit ----------------
 fig, ax = plt.subplots(1, 1, figsize=(W, 3.3))
-items = [(pc.flame_q(2, 1e-4), 1e-2, 'C0', '-', r"I: $y'=y^2(1-y)$, $\delta=10^{-4}$"),
-         (pc.flame_q(2, 1e-4), 0.0, 'C0', ':', r"I: same, relative control only"),
-         (pc.flame_q(3, 1e-3), 1e-2, 'C1', '-', r"I: $y'=y^3(1-y)$, $\delta=10^{-3}$"),
-         (pc.ghost(1e-6), 1e-2, 'C2', '-', r"III: $x'=\varepsilon+x^2$, $\varepsilon=10^{-6}$"),
-         (pc.logistic(1e-7), 1e-2, 'C3', '-', r"II: $x'=x(1-x)$, $x_0=10^{-7}$"),
-         (pc.logistic(1e-1), 1e-2, 'C7', '-', r"none: $x'=x(1-x)$, $x_0=10^{-1}$")]
-for p, ratio, col, ls, lab in items:
+# line style and marker distinguish the curves in black and white (release 1.1.2); colours as before
+items = [(pc.flame_q(2, 1e-4), 1e-2, 'C0', '-', None, r"I: $y'=y^2(1-y)$, $\delta=10^{-4}$"),
+         (pc.flame_q(2, 1e-4), 0.0, 'C0', ':', None, r"I: same, relative control only"),
+         (pc.flame_q(3, 1e-3), 1e-2, 'C1', '--', None, r"I: $y'=y^3(1-y)$, $\delta=10^{-3}$"),
+         (pc.ghost(1e-6), 1e-2, 'C2', '-.', None, r"III: $x'=\varepsilon+x^2$, $\varepsilon=10^{-6}$"),
+         (pc.logistic(1e-7), 1e-2, 'C3', '-', 'o', r"II: $x'=x(1-x)$, $x_0=10^{-7}$"),
+         (pc.logistic(1e-1), 1e-2, 'C7', (0, (6, 2, 1, 2, 1, 2)), None, r"none: $x'=x(1-x)$, $x_0=10^{-1}$")]
+MKW = dict(ms=3.2, mfc='white', mew=0.8)
+for p, ratio, col, ls, mk, lab in items:
     x = p.grid
     t = np.array([p.T(v) for v in x]) / p.T(p.xe)
     th = p.Theta(x, ratio) / p.Theta(np.array([p.xe]), ratio)[0]
-    ax.semilogy(t, th, color=col, ls=ls, lw=1.1, label=lab)
+    ax.semilogy(t, th, color=col, ls=ls, lw=1.1, label=lab,
+                **(dict(marker=mk, markevery=[int(i) for i in np.searchsorted(t, np.linspace(0.05, 0.95, 10))], **MKW) if mk else {}))
 s = pd.read_csv(S + 'sir_theta.csv'); c = pd.read_csv(S + 'sir_cases.csv')
 ss = s[s.I0 == 1e-6]; cc = c[c.I0 == 1e-6].iloc[0]
-ax.semilogy(ss.t / cc.Te, ss.Theta / cc.Theta_e, color='C4', lw=1.1, label=r"II: SIR, $I_0=10^{-6}$ (adjoint)")
+ts = (ss.t / cc.Te).to_numpy()
+ax.semilogy(ts, ss.Theta / cc.Theta_e, color='C4', lw=1.1, marker='^',
+            markevery=[int(i) for i in np.searchsorted(ts, np.linspace(0.1, 0.9, 9))], **MKW,
+            label=r"II: SIR, $I_0=10^{-6}$ (adjoint)")
 ax.set_xlabel(r'$t/T_e$ (fraction of the time to the event)')
 ax.set_ylabel(r'$\Theta(t)/\Theta(T_e)$')
 ax.set_xlim(0, 1.0); ax.set_ylim(0.3, 1e7); ax.grid(alpha=0.3)
